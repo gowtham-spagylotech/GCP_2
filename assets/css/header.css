@@ -1,0 +1,200 @@
+header{
+    position: relative;
+}
+.navigation{
+    position: fixed;
+    top: 50px;
+    width: 100%;
+    z-index: 1;
+}
+.logo {
+    width: 16.3%;
+}
+.navbar{
+    /* width: 37.25%; */
+    width: max-content;
+}
+.navigation .row{
+    /* column-gap: 40.6%; */
+    justify-content: space-between;
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.navbar nav{
+    width: 66%;
+}
+.navbar-nav {
+    list-style: none;
+}
+.nav-item {
+    display: inline-block;
+    padding-right: 13.6%;
+    position: relative;
+}
+.nav-item:last-child{
+    padding-right: 0;
+}
+.nav-item .nav-link{
+    font-family: 'Inter Tight', sans-serif;;
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    line-height: var(--line-height-normal);
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+.nav-item .nav-link.text-decoration{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.nav-item .nav-link:hover {
+    font-weight: 800;
+}
+.nav-item .nav-link::before{
+    display: block;
+    content: attr(title);
+    font-weight: 800;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.dropdownmenu{
+    position: absolute;
+    left: 0;
+    list-style: none;
+    margin-top: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease-in-out;
+    -webkit-transition: all 0.8s ease-in-out;
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+.dropdown-item {
+    border-top: 1px solid rgb(255, 255, 255, .5);
+    padding: 10px 7px;
+}
+.dropdown-item:hover {
+    background: rgb(237, 237, 237, .1);
+}
+.dropdown-item .dropdown-link{
+    font-family: 'Inter Tight', sans-serif;
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    line-height: var(--line-height-normal);
+    color: var(--tertiary-color);
+    letter-spacing: 0.48px;
+    text-decoration: none;
+}
+.dropdown-item .dropdown-link:hover ~ .dropdown-item{
+    background: rgb(237, 237, 237, .1);
+}
+.searchbox {
+    position: relative;
+    width: 25%;
+    margin-left: 8.95%;
+}
+.searchbox svg {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+}
+.searchInput {
+    background: transparent;
+    border-radius: 50px;
+    border: 1px solid var(--tertiary-color);
+    padding: 7px 17px 7px 41px;
+    width: 100%;
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    line-height: var(--line-height-normal);
+    color: var(--tertiary-color);
+}
+.searchInput::placeholder {
+    font-size: var(--font-size-16);
+    font-weight: 500;
+    line-height: var(--line-height-normal);
+    color: var(--tertiary-color);
+}
+.searchInput:focus-visible, .searchInput:focus {
+    outline: none;
+}
+
+@media (max-width: 991.98px){
+    .hamburger .line {
+        width: 35px;
+        height: 3px;
+        background: var(--tertiary-color);
+        margin: 5px auto;
+        transition: all 0.8s ease-in-out;
+    }
+    #navbar{
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.8s ease-in-out;
+        display: inline;
+    }
+    .showNav{
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+    #hamburger.crossed .line:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    
+    #hamburger.crossed .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #hamburger.crossed .line:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }    
+    .navbar nav {
+        width: 100%;
+        margin: auto;
+    }
+    .nav-item {
+        display: block;
+        padding-right: 0;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    .searchbox {
+        width: 50%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #mobDataResults .dropdown-arrow{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #mobDataResults .dropdown-arrow::before {
+        font-family: 'Inter Tight';
+        font-size: 20px;
+        line-height: normal;
+        color: var(--tertiary-color);
+        position: absolute;
+        top: -2px;
+        right: 0;
+        padding: 0 10px;
+        transition: all .8s;
+        content: '\002B';
+    }
+    .mobDropdownmenu{
+        max-height: 0;
+        overflow: hidden;
+        list-style: none;
+        transition: max-height 0.8s ease-in-out;
+        -webkit-transition: max-height 0.8s ease-in-out;
+    }
+    .mobDropdownmenu.show{
+        max-height: 100%;
+        margin-top: 8px;
+    }
+}

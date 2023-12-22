@@ -1,0 +1,203 @@
+footer {
+    background: var(--primary-color);
+}
+.footerSideBorder {
+    border-left: 1px solid var(--tertiary-color);
+    border-right: 1px solid var(--tertiary-color);
+}
+.footerTopBorder{
+    border-top: 1px solid var(--tertiary-color);
+}
+footer .row{
+    padding-right: 5.71%;
+    padding-left: 5.85%;
+}
+footer .column:first-child{
+    width: 27.4%;
+    padding-right: 5.75%;
+    padding-left: 0;
+}
+footer .column{
+    padding: 60px 3.2%;
+    width: 25.25%;
+    border-right: 1px solid var(--tertiary-color);
+}
+footer .column:last-child{
+    width: 22.09%;
+    border-right:0;
+    padding-right: 0;
+}
+footer .description{
+    color: var(--tertiary-color);
+    padding-top: 11px;
+}
+footer .footerNavTitle{
+    color: var(--tertiary-color);
+    font-family: 'Inter Tight', sans-serif;
+    font-size: var(--font-size-18);
+    font-weight: 500;
+    line-height: var(--line-height-25);
+}
+.footerNavList {
+    list-style: none;
+}
+footer .footerNavList li{
+    padding-top: 20px;
+}
+footer .footerNavItem{
+    color: var(--tertiary-color);
+    font-family: 'Manrope',sans-serif;
+    font-size: var(--font-size-14);
+    font-weight: 500;
+    line-height: var(--line-height-25);
+    text-decoration: none;
+}
+#signupForm {
+    padding: 60px 0;
+    width: 67.86%;
+    margin: auto;
+}
+.formRow{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    /* column-gap: 5.5%; */
+}
+#footerSubscribeWrapper {
+    width: 80.67%;
+}
+footer input[type="text"], footer input[type="email"], #footerCaptcha, .footerList a, .footerList.separater{
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--font-size-12);
+    line-height: var(--line-height-normal);
+    font-weight: 400;
+    color: var(--tertiary-color);
+}
+footer input[type="text"], footer input[type="email"], #footerCaptcha{
+    width: 46.55%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--tertiary-color);
+    -webkit-text-fill-color: var(--tertiary-color) !important;    
+    outline: none;
+    padding-bottom: 5px;
+    padding-right: 4%;
+}
+footer input[type="text"]{
+    margin-right: 6.35%;
+}
+footer input[type="submit"]{
+    width: auto;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid var(--tertiary-color);
+    color: var(--tertiary-color);
+    -webkit-text-fill-color: var(--tertiary-color) !important;
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-normal);
+    font-weight: 600;
+    text-transform: uppercase;
+    outline: none;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+footer input {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0px 1000px var(--tertiary-color) inset !important;
+    -webkit-transition-delay: 99999s !important;
+    background-color: transparent !important;
+}
+footer .firstRow{
+    padding: 0;
+}
+footer .lastRow{
+    padding: 0;
+    margin-top: 30px;
+}
+footer .captchaRow{
+    padding: 0;
+    width: 46.55%;
+}
+#footerCaptchaTextBox {
+    margin-right: 0;
+    width: 46.3%;
+}
+.footerCaptchaWrapper{
+    margin-right: 7.4%;
+    width: 46.3%;
+}
+ #footerCaptcha {
+    width: 100%;
+}
+.footerLastRow{
+    padding: 18px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .copyright{
+    padding: 0;
+}
+.termsCondition ul{
+    list-style: none;
+}
+.footerList{
+    display: inline-block;
+}
+
+@media (max-width: 1110.98px){
+    #signupForm {
+        width: 74%;
+    }
+}
+@media (max-width: 991.98px){
+    #signupForm {
+        width: 95%;
+    }
+}
+@media (max-width: 767.98px){
+    footer .column, footer .column:first-child, footer .column:last-child {
+        width: 100%;
+        padding: 20px 0;
+        padding-right: 5.75%;
+        padding-left: 0;
+        border: 0;
+    }
+    footer .column:first-child {
+        padding-top: 60px;
+    }
+    footer .column:last-child {
+        padding-bottom: 60px;
+    }
+    footer .footerNavList li {
+        padding-top: 10px;
+    }
+    #signupForm ,#footerSubscribeWrapper {
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], #footerCaptcha, footer .captchaRow{
+        width: 100%;
+        margin-right: 0;
+    }
+    footer input{
+        margin-bottom: 30px;
+    }
+    footer .lastRow{
+        margin-top: 0;
+    }
+    footer .copyright {
+        order: 2;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GCP2</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;500;600;700;800&family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/lib.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/banner.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="navigation">
+            <div class="container">
+                <div class="show_desktop">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="assets/img/logo.svg" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="navbar">
+                            <nav>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" title="About">About</a>
+                                    </li>
+                                    <li class="nav-item" id="dataResults">
+                                        <a href="#" class="nav-link" title="Data & Results">Data & Results</a>
+                                        <ul class="dropdownmenu">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">Live Data</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">Event Analysis</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-decoration" title="Join Us">Join Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="searchbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                    <circle cx="10.1504" cy="10.1499" r="6.42707" transform="rotate(45 10.1504 10.1499)" stroke="white" stroke-width="1.5"/>
+                                    <line x1="15.0303" y1="14.4528" x2="20.772" y2="20.1945" stroke="white" stroke-width="1.5"/>
+                                </svg>
+                                <input  placeholder="Search"  type="text" name="search" class="searchInput" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hide_desktop">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="assets/img/logo.svg" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="hamburger" id="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="navbar" id="navbar">
+                        <nav>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" title="About">About</a>
+                                </li>
+                                <li class="nav-item" id="mobDataResults">
+                                    <a href="#" class="nav-link" title="Data & Results" onclick="toggleDropdown()">
+                                        Data & Results
+                                        <span class="dropdown-arrow"></span>
+                                    </a>
+                                    <ul class="mobDropdownmenu">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">Live Data</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">Event Analysis</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-decoration" title="Join Us">Join Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="searchbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+                                <circle cx="10.1504" cy="10.1499" r="6.42707" transform="rotate(45 10.1504 10.1499)" stroke="white" stroke-width="1.5"/>
+                                <line x1="15.0303" y1="14.4528" x2="20.772" y2="20.1945" stroke="white" stroke-width="1.5"/>
+                            </svg>
+                            <input  placeholder="Search"  type="text" name="search" class="searchInput" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="heroBanner">
+        <div class="bannerContent">
+            <div class="container">
+                <div class="heroContainer">
+                    <div class="textWrapper">
+                        <h1>Demystifying Interconnectivity and Global Consciousness so humanity can <strong>thrive</strong>.</h1>
+                        <h6>Join our mission to learn how humanity’s consciousness can have a global impact—and how we can use these findings to create a better world.</h6>
+                        <div class="buttonWrapper">
+                            <a href="#"><button class="button">Become a Citizen Scientist ↗</button></a>
+                            <a href="#" class="hyperlink">Fund the Research  ↗ </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footerSideBorder">
+            <div class="row">
+                <div class="column">
+                    <div class="footerLogo">
+                        <img src="assets/img/Footer_Logo.svg" alt="logo" />
+                    </div>
+                    <div class="description">
+                        <p>Developed and maintained by donor-funded HeartMath Institute, the <strong>GCP 2.0</strong> is a data-driven global exploration of the interconnection between human consciousness and the physical world.</p>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footerNav">
+                        <h6 class="footerNavTitle">GCP2.0 Help</h6>
+                        <ul class="footerNavList">
+                            <li><a href="/contact-us" class="footerNavItem">Contact Us</a></li>
+                            <li><a href="#" class="footerNavItem">Register Your RNG Device</a></li>
+                            <li><a href="#" class="footerNavItem">Quick Start Guide</a></li>
+                            <li><a href="#" class="footerNavItem">User Manual</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footerNavTitle">
+                        <h6 class="footerNavTitle">Research</h6>
+                        <ul class="footerNavList">
+                            <li><a href="#" class="footerNavItem">Research Library</a></li>
+                            <li><a href="#" class="footerNavItem">Hypothesis Registry</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="footerNavTitle">
+                        <h6 class="footerNavTitle">Related Sites</h6>
+                        <ul class="footerNavList">
+                            <li><a href="#" class="footerNavItem">Global Coherence Initiative</a></li>
+                            <li><a href="#" class="footerNavItem">Tree Rhythms</a></li>
+                            <li><a href="#" class="footerNavItem">HeartMath Institute</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerTopBorder">
+            <div class="container footerSideBorder">
+                <div class="row">
+                    <div id="signupForm">
+                        <form class="formRow">
+                            <div class="formInput" id="footerSubscribeWrapper">
+                                <div class="row firstRow">
+                                    <input type="text" value="" name="FNAME" class="firstName" id="FNAME" placeholder="First Name" required>
+                                    <input type="email" value="" name="EMAIL" class="required email" id="EMAIL" placeholder="Email" required>
+                                </div>
+                                <div class="row lastRow">
+                                    <input type="text" value="" name="LNAME" class="lastName" id="LNAME" placeholder="Last Name" required>
+                                    <div class="row captchaRow">
+                                        <div class="footerCaptchaWrapper">
+                                            <div id="footerCaptcha">MW!wr7</div>
+                                        </div>
+                                        <input type="text" placeholder="Enter a Captcha" id="footerCaptchaTextBox"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="submit" value="Sign Up  ↗" name="SEND" id="footerSubscribe" class="submitButton">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerTopBorder">
+            <div class="container footerSideBorder">
+                <div class="row footerLastRow">
+                    <div class="description copyright">®2023 Community Resource Exchange. All Rights Reserved</div>
+                    <div class="termsCondition">
+                        <ul>
+                        <li class="footerList">
+                            <a href="/terms-condition">Terms &amp; Conditions</a>
+                        </li>
+                        <li class="footerList separater">|</li>
+                        <li class="footerList">
+                            <a href="/terms-condition">Privacy Policy</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" crossorigin="anonymous"></script>
+    <script src="assets/js/nav.js"></script>
+</body>
+</html>
