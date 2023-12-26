@@ -28,7 +28,7 @@
 body{
     box-sizing: border-box;
     max-width: 100%;
-    font-family: 'Manrope', sans-serif;;
+    font-family: 'Manrope', sans-serif;
     overflow-x: hidden !important;
     color: var(--primary-color);
 }
