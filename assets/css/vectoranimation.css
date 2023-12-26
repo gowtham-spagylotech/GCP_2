@@ -1,0 +1,136 @@
+/* Set the background of the content section with a cover image */
+.animation_section {
+    position: relative;
+    background: url(../img/Animation_Bg..png) no-repeat;
+    background-size: cover;
+}
+
+/* Set the background of the video section with a cover image and define its height */
+.video_section {
+    position: relative;
+    background: url(../img/Video_Bg_.png) no-repeat;
+    background-size: cover;
+    height: 694px;
+}
+
+/* Style for the main content within the video section */
+.video_section .main_content {
+    background: url(../img/Main_Content_bg.png) no-repeat;
+    background-size: cover;
+    width: 47.22%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 100px;
+    color: var(--tertiary-color);
+}
+
+/* Add padding for spacing at the bottom of the video content */
+.video_section .main_content .bottom_space {
+    padding-bottom: 30px;
+}
+
+/* Styling for the heading within the video content */
+.video_section .main_content .video_heading {
+    font-family: Inter;
+    font-size: var(--font-size-40);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Styling for the description within the video content */
+.video_section .main_content .video_describtion {
+    font-family: Manrope;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: var(--line-height-24);
+}
+
+/* Style for the main content wrapper within the animation section */
+.animation_section .animation_and_text_wrapper {
+    color: var(--tertiary-color);
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+/* Adjust margin for left content on larger screens within the animation section */
+.animation_and_text_wrapper .left_animation {
+    margin-right: 50px;
+    width: 38.19%;
+}
+
+/* Adjust margin for right content on larger screens within the animation section */
+.animation_and_text_wrapper .right_content {
+    margin-left: 50px;
+    width: 33.96%;
+}
+
+/* Set styling for the image within the left content in the animation section */
+.animation_and_text_wrapper .left_animation img {
+    width: 100%;
+    height: 490px;
+    background-size: cover;
+}
+
+/* Apply italic font style for specific elements */
+.italic_font {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Adjust margin and styling for various elements within the right content in the animation section */
+.animation_and_text_wrapper .right_content .bottom_space {
+    padding-bottom: 30px;
+}
+
+/* Adjust margin and styling for various elements within the right content in the animation section */
+.animation_and_text_wrapper .right_content .description {
+    font-family: Manrope;
+    font-size: var(--font-size-16);
+    font-style: normal;
+    font-weight: 300;
+    line-height: var(--line-height-24);
+}
+
+/* Adjust margin and styling for various elements within the right content in the animation section */
+.animation_and_text_wrapper .right_content .hight_light {
+    font-weight: 700;
+}
+
+/* Media query for responsiveness on medium-sized screens */
+@media (max-width: 991.98px) {
+    /* Adjust styles for the animation section on smaller screens */
+    .animation_and_text_wrapper .left_animation,
+    .animation_and_text_wrapper .right_content {
+        margin-left: 0px;
+        width: 100%;
+    }
+    .animation_and_text_wrapper .right_content {
+        margin-top: 60px;
+    }
+    .video_section .main_content {
+        width: 57.22%;
+        padding: 80px;
+    }
+}
+
+/* Media query for responsiveness on smaller screens */
+@media (max-width: 767.98px){
+    /* Adjust styles for the video section on smaller screens */
+    .video_section .main_content {
+        width: 67.22%;
+        padding: 60px;
+    }
+}
+
+/* Media query for responsiveness on even smaller screens */
+@media (max-width: 575.98px){
+    /* Further adjustments for the video section on very small screens */
+    .video_section .main_content {
+        width: 77.22%;
+        padding: 60px;
+    }
+}
