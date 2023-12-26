@@ -1,0 +1,358 @@
+.gird-flex {
+    display: flex;
+}
+
+.grid-title h4 {
+    font-weight: 700;
+    margin-bottom: 19.5px;
+}
+
+.grid-description p {
+    width: 100%;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 80px;
+}
+
+.column.grid {
+    width: 33.333%;
+    border-right: 1px solid var(--light-Blue);
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.column.grid-last {
+    width: 33.333%;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.column.grid-1 {
+    width: 33.332%;
+    border-right: 1px solid var(--light-Blue);
+    padding-right: 75px;
+    padding-left: 45px;
+}
+
+.column.grid-2 {
+    width: 33.332%;
+    border-right: 1px solid var(--light-Blue);
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.column.grid-3 {
+    width: 33.332%;
+    padding-right: 59.5px;
+    padding-left: 60px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.gridLogo {
+    margin-top: 81px;
+    margin-bottom: 31.5px;
+}
+
+.top-bottom-border {
+    border-top: 1px solid var(--light-Blue);
+    border-bottom: 1px solid var(--light-Blue);
+}
+
+.container.three-grid-block {
+    border-left: 1px solid var(--light-Blue);
+}
+
+.empty-padding-border-bottom {
+    border-bottom: 1px solid var(--light-Blue);
+    /* remove margin-bottom:100px after separting the blocks */
+    margin-bottom: 100px;
+}
+
+.empty-padding-border {
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+    padding-top: 100px;
+}
+
+.grid-link {
+    text-align: center;
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+    padding-top: 30px;
+    padding-bottom: 33px;
+    text-align: center;
+}
+
+a.gridNavItem {
+    margin-top: 30px;
+    margin-bottom: 33px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+
+
+
+.column.grid-padding-1 {
+    width: 33.333%;
+    padding-left: 70px;
+    padding-right: 30px;
+    border-right: 1px solid var(--light-Blue);
+}
+
+.column.grid-padding-2 {
+    width: 33.333%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: 1px solid var(--light-Blue);
+}
+
+.column.grid-padding-3 {
+    width: 33.333%;
+    padding-left: 30px;
+    padding-right: 69.5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.grid-description-f20 p {
+    width: 100%;
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 81px;
+}
+
+.grid-description-f20.margin-top-102 {
+    margin-top: 102px;
+}
+
+
+
+
+/* Accordion start */
+
+.accordion-p-title p {
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.accordion-title h2 {
+    width: 40%;
+    margin-bottom: 60px;
+    margin-left: 70px;
+}
+
+.padding-border-top-bottom {
+    border-bottom: 1px solid var(--light-Blue);
+    border-top: 1px solid var(--light-Blue);
+}
+
+.padding-border-bottom {
+    border-bottom: 1px solid var(--light-Blue);
+}
+
+.padding-border-top {
+    border-top: 1px solid var(--light-Blue);
+}
+
+.accordion-icon {
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.accordion-margin {
+    margin-left: 190px;
+}
+
+.accordion {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    position: relative;
+    background: none;
+}
+
+.active,
+.accordion:hover {
+    background-color: transparent;
+}
+
+.accordion:before {
+    content: '\002B';
+    color: var(--tertiary-color);
+    float: left;
+    padding: 40px;
+    background: var(--secondary-color);
+}
+
+.active:before {
+    content: "\2212";
+    color: var(--secondary-color);
+    background: #fff;
+}
+
+.panel {
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    margin-left: 120px;
+}
+
+.accordion-column-1 {
+    width: 42.479%;
+}
+
+h5.accordion-title-space {
+    margin-top: 44px;
+    margin-left: 120px;
+}
+
+.accordion-line-height {
+    line-height: 24px;
+}
+
+.color-fff {
+    color: #fff;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-31 {
+    margin-bottom: 31px;
+}
+
+.mt-44 {
+    margin-top: 44px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.accordion-hr-line {
+    border-bottom: 1px solid #fff;
+    /* width: 20.101%; */
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.column.accordion-TM-img img {
+    border-radius: 80px;
+}
+
+.column.accordion-TM-details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.row.no-wrap {
+    flex-wrap: nowrap;
+    column-gap: 120.74px;
+}
+
+.accordion-banner-right-img img {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+}
+
+
+
+
+
+@media (max-width: 991.98px) {
+    .column.grid {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-last {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-1 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-2 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-3 {
+        width: 100%;
+        border-right: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-padding-1 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-padding-2 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-padding-3 {
+        width: 100%;
+        border-right: 1px solid var(--light-Blue);
+    }
+
+
+    .accordion-margin {
+        margin-left: 0px;
+    }
+
+    .row.no-wrap {
+        flex-wrap: wrap;
+        row-gap: 50px;
+    }
+
+    .accordion-column-1 {
+        width: 80%;
+    }
+
+    #accordion-order-1{
+        order: 1;
+    }
+    
+    #accordion-order-2{
+        order: 2;
+    }
+}
