@@ -143,8 +143,8 @@ h6 strong, h6 b{
 .hyperlink {
     text-align: center;
     font-family: 'Inter Tight', sans-serif;
-    font-size: var(--font-size-18);
-    font-weight: 700;
+    font-size: var(--font-size-16);
+    font-weight: 600;
     line-height: var(--line-height-normal);
     color:var(--secondary-color);
     text-transform: uppercase;
@@ -152,6 +152,7 @@ h6 strong, h6 b{
     background-color: transparent;
     border-bottom: 2px solid var(--secondary-color);
     transition: 1s ease;
+    letter-spacing: 0.32px;
     cursor: pointer;
     text-decoration: none;
 }

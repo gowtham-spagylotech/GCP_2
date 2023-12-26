@@ -11,59 +11,37 @@
     border-right: 1px solid var(--tertiary-color);
     color: var(--tertiary-color);
     padding: 150px 70px;
+    column-gap: 8.33%;
 }
 
 /* Style for the left and right content columns */
-.content_section .content_wrapper .left_content,
-.content_section .content_wrapper .right_content {
+.content_section .left_content,
+.content_section .right_content {
     width: 40%;
 }
 
 /* Styling for the description in the left content */
-.content_section .content_wrapper .left_content .description {
-    font-family: Manrope;
-    font-size: var(--font-size-24);
-    font-style: normal;
+.content_section .left_content .left_description {
+    font-family: 'Manrope', sans-serif;
     font-weight: 300;
-    line-height: normal;
 }
 
 /* Add padding to specific elements */
-.left_content h2,
-.right_content .apply_division h6,
-.right_content .apply_division .description,
-.right_content .content h6,
-.right_content .content .description {
+.content_section .left_content h2,
+.content_section .right_content h6,
+.content_section .right_content .mainTitle {
     padding-bottom: 30px;
 }
 
 /* Additional styling for certain heading elements */
-.right_content .apply_division h6,
-.right_content .content h6 {
+.content_section .right_content h6 {
     padding-bottom: 30px;
     font-weight: 700;
 }
 
-/* Styling for the description in the right content */
-.right_content .apply_division .description,
-.right_content .content .description {
-    font-family: Manrope;
-    font-size: var(--font-size-16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: var(--line-height-24);
-}
-
 /* Styling for links in the right content */
-.right_content .apply_division a,
-.right_content .content a {
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
-    text-decoration: none;
+.content_section .right_content a,
+.content_section .right_content a {
     color: var(--tertiary-color);
     border-bottom: 2px solid var(--tertiary-color);
 }
@@ -75,20 +53,10 @@
     padding-bottom: 60px;
 }
 
-/* Adjust margin for left content on larger screens */
-.content_section .content_wrapper .left_content {
-    margin-right: 50px;
-}
-
-/* Adjust margin for right content on larger screens */
-.content_section .content_wrapper .right_content {
-    margin-left: 50px;
-}
-
 /* Styling for horizontal lines in the right content */
-.content_section .content_wrapper .right_content::before,
-.content_section .content_wrapper .right_content .donation_division .line::before,
-.content_section .content_wrapper .right_content::after {
+.content_section .right_content::before,
+.content_section .right_content .donation_division .line::before,
+.content_section .right_content::after {
     border-top: 1px solid var(--tertiary-color);
     color: var(--tertiary-color);
     content: "";
@@ -98,39 +66,28 @@
 
 /* Media query for responsiveness on smaller screens */
 @media (max-width: 991.98px) {
-    .content_section .content_wrapper {
-        display: flex;
-        align-items: top;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        border-left: 1px solid var(--tertiary-color);
-        border-right: 1px solid var(--tertiary-color);
-        color: var(--tertiary-color);
-        padding: 150px 70px;
-    }
-
+    
     /* Adjust width for left and right content columns on smaller screens */
-    .content_section .content_wrapper .left_content,
-    .content_section .content_wrapper .right_content {
+    .content_section .left_content,
+    .content_section .right_content {
         width: 100%;
     }
 
     /* Remove right margin for left content on smaller screens */
-    .content_section .content_wrapper .left_content {
-        margin-right: 0px;
+    .content_section .left_content {
+        margin-bottom: 4.16%
     }
 
     /* Adjust margin for right content on smaller screens */
-    .content_section .content_wrapper .right_content {
-        margin-left: 0px;
-        margin-top: 60px;
+    .content_section .right_content {
+        margin-top: 4.16%
     }
 
-    /* Adjust width for horizontal lines in the right content on smaller screens */
-    .content_section .content_wrapper .right_content::before,
-    .content_section .content_wrapper .right_content .donation_division .line::before,
-    .content_section .content_wrapper .right_content::after {
+    /* Styling for horizontal lines in the right content */
+    .content_section .right_content::before,
+    .content_section .right_content .donation_division .line::before,
+    .content_section .right_content::after {
         width: 100%;
     }
+
 }
