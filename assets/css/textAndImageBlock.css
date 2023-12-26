@@ -1,0 +1,120 @@
+/*text and image block */
+.textandimage {
+    padding-top: 190px;
+    column-gap: 150px;
+    justify-content: space-between;
+}
+.textandimage .column {
+    width: 41%;
+}
+
+.textandimage .content p{
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal; 
+}
+.textandimage .content h2 {
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.imageWrapper {
+    margin: auto;
+    position: relative;
+}
+.bg_image{
+    background: transparent !important;
+}
+img.rightImgOverlay {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+}
+.shapeCenter {
+    left: -50px;
+    transform: translate(0%, -50%);
+    right: 0;
+    margin: auto;
+}
+span{
+    font-weight: bold;
+}
+/*Team Slider block */
+.teamContent {
+    padding-top: 150px;
+}
+.teamContent h5 {
+     color: var(--secondary-color);
+     text-align: center;
+     font-weight: 800;
+}
+.teamContent h4 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.space {
+    column-gap: 57px;
+    justify-content: center;
+}
+.teamContent .column {
+    width: 22%;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container .name {
+    visibility: hidden;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: -25px; 
+    left: 0;
+    background-color:var(--secondary-color);
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+  }
+  .image-container .name.title {
+    
+    bottom: -50px; 
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .image-container:hover .name {
+    visibility: visible;
+  }
+  .teamBorder{
+    border-top: 1px solid var(--light-Blue);
+    border-bottom: 1px solid var(--light-Blue);
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+  
+
