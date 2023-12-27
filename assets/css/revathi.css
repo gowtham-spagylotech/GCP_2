@@ -1,13 +1,24 @@
 /*text and image block */
 .textandimage {
     padding-top: 190px;
-    column-gap: 150px;
-    justify-content: space-between;
+    justify-content: space-between; 
 }
 .textandimage .column {
-    width: 41%;
+    width: 45.9%;
 }
-
+.textandimage .content {
+    padding-left: 70px;
+    padding-top: 53px;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.textAndImageSideBorder {
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid var(--light-Blue);
+}
 .textandimage .content p{
     color: var(--secondary-color);
     text-transform: uppercase;
@@ -59,10 +70,10 @@ span{
     padding-top: 30px;
     padding-bottom: 60px;
 }
-.space {
+/* .space {
     column-gap: 57px;
     justify-content: center;
-}
+} */
 .teamContent .column {
     width: 22%;
 }
@@ -94,6 +105,10 @@ span{
   .image-container:hover .name {
     visibility: visible;
   }
+
+  .teamSlider .swiper {
+    padding-bottom: 100px;
+}
   .teamBorder{
     border-top: 1px solid var(--light-Blue);
     border-bottom: 1px solid var(--light-Blue);
@@ -102,6 +117,17 @@ span{
     width: 100%;
     height: 100%;
   }
+
+  .teamSlider .swiper-button-prev {
+    top: unset;
+    bottom: 0;
+    left: 41%;
+}
+.teamSlider .swiper-button-next {
+    top: unset;
+    bottom: 0;
+    right: 41%;
+}
 
   .swiper-slide {
     text-align: center;
@@ -116,5 +142,54 @@ span{
     display: block;
     object-fit: cover;
   }
-  
+  /* Team List Block */
+  .teamListBlock {
+    padding-top: 150px;
+  }
+.teamListBlock .space {
+    column-gap: 57px;
+    /* justify-content: center; */
+}
+.teamListBlock h5 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 800;
+}
+.teamListBlock h4 {
+   color: var(--primary-color);
+   text-align: center;
+   padding-top: 30px;
+   padding-bottom: 60px;
+}
+.rowspace {
+    margin-top: 125px;
+    margin-bottom: 125px;
+}
 
+ /* Resaerch Team List Block */
+ .researchTeam h3 {
+    text-align: center;
+    padding-bottom: 30px;
+ }
+ .researchTeam .space {
+    column-gap: 57px;
+    /* justify-content: center; */
+}
+.imageandtext .title {
+    color: var(--secondary-color);
+}
+.imageandtext .column {
+    width: 41%;
+}
+.spacing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.imageandtext {
+    /* padding-top: 190px; */
+    column-gap: 150px;
+    justify-content: space-between;
+}
+.imageandtext .title {
+    padding-top: 175px;
+}
