@@ -1,0 +1,281 @@
+/* Adjusting container style in key_live_data_map_section */
+.key_live_data_map_section{
+    position: relative;
+    background: url(../img/Key_Live_Data_Bg..jpg) no-repeat;
+    background-size: cover; 
+}
+
+.key_live_data_map_section .container{
+    padding-top: 150px;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+.line_and_map_wrapper{
+    justify-content: space-between;
+}
+.key_line_and_map_section {
+    background-color: var(--tertiary-color);
+}
+.line_and_map_container {    
+    padding-left:7.28%;
+    padding-right:7.28%;    
+}
+
+/* Styling the vertical line */
+.line_and_map_wrapper .vertical_line {
+    border-left: 1px solid var(--light-Blue);
+    position: relative;
+}
+
+/* General styling for elements with class "general" */
+.line_heading {
+    font-family: 'Manrope', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    margin-top: 144px;
+    margin-left: 22px;
+    width: 48%;
+    color: var(--primary-color);
+}
+
+/* Styling the vertical_line unordered list */
+.vertical_line ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-2%);
+}
+
+/* Styling list items in vertical_line */
+.vertical_line ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding-bottom: 40px;
+    color: var(--primary-color);
+}
+
+/* Styling span within list items */
+.vertical_line ul li span {
+    margin-left: 15px;
+}
+
+/* Adjusting margin for the first and last list items */
+.vertical_line ul li:first-child {
+    margin-top: 36px;
+}
+
+.vertical_line ul li:last-child {
+    margin-bottom: 148px;
+    padding-bottom: 0px;
+}
+
+/* Styling live_Data_Map in key_live_data_map_section */
+.key_live_data_map_section .live_Data_Map {
+    width: 41.25%;
+    padding-top: 59.38px;
+    padding-bottom: 59.38px;
+}
+
+.key_live_data {
+    width: 66.66%;
+    margin-top:60px;
+    padding-bottom: 150px;
+    margin-left: 16.66%;
+    margin-right: 16.66%;
+    color: var(--tertiary-color);
+}
+
+.key_live_data .bottom_space{
+    padding-bottom: 30px;
+}
+
+.key_live_data .button{
+    color: var(--tertiary-color);
+    border-color:var(--tertiary-color);;
+}
+/* Styling map_and_info and data_info */
+.map_and_info {
+    display: flex;
+}
+
+.data_info {
+    margin-left: 10%;
+}
+
+/* Styling tooltip and tooltip text */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 270px;
+    background-color: #EDEDED;
+    text-align: center;
+    border-radius: 6px;
+    padding: 7.5px 15px;
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    margin-top: 8px;
+    margin-left: -60px;
+    color: #000;
+    font-family: 'Manrope', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    transform: translate(-48%, 0%);
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    right: 25%;
+    margin-top: -5px;
+    border-width: 5px 5px 0 5px;
+    border-style: solid;
+    border-color: var(--gray-color) transparent transparent transparent;
+    transform: rotate(180deg);
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Styling increase_and_decrease section */
+.increase_and_decrease {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+}
+
+/* Styling increase and decrease buttons */
+.increase_and_decrease .increase_button {
+    background-color: #3754AB;
+    color: #ffff;
+}
+
+.increase_and_decrease .decrease_button {
+    color: #3754AB;
+    background-color: #ffff;
+}
+
+.increase_and_decrease .increase_button,
+.increase_and_decrease .decrease_button {
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(0%, -52%);
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 991.98px) {
+
+    .key_live_data_map_section .container{
+        padding-top: 150px;
+        padding-left: 0px;
+        padding-right: 0px;
+        
+    }
+
+    .key_live_data_map_section .title {
+        padding-top: 100px;
+    }
+
+    .key_live_data_map_section .header_content {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .key_live_data_map_section .live_Data_Map {
+        width: 100%;
+    }
+
+    .line_and_map_wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vertical_line {
+        order: 1;
+        margin-top: 20px;
+        /* Adjust as needed */
+        margin-bottom: 20px;
+        /* Adjust as needed */
+    }
+
+    .vertical_line ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        transform: translate(0,-8px);
+    }
+
+    .vertical_line ul li {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .vertical_line ul li span {
+        padding-top: 10px;
+    }
+
+    /* Adjusting margin for the first and last list items */
+    .vertical_line ul li:first-child {
+        margin-top: 0px;
+    }
+
+    .vertical_line ul li:last-child {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    /* Styling the vertical line */
+    .line_and_map_wrapper .horizontal_line {
+        border-top: 1px solid var(--light-Blue);
+        position: relative;
+    }
+
+    /* Styling the vertical line */
+    .line_and_map_wrapper .vertical_line {
+        border: none;
+    }
+
+    .line_heading {
+        margin-top: 72px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        width: 100%;
+        color: var(--primary-color);
+    }
+
+    .key_live_data {
+        width: 80%;
+        margin-top:60px;
+        padding-bottom: 150px;
+        margin-left: 10.66%;
+        margin-right: 10.66%;
+        color: var(--tertiary-color);
+    }
+
+}

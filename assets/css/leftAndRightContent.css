@@ -10,7 +10,7 @@
     border-left: 1px solid var(--tertiary-color);
     border-right: 1px solid var(--tertiary-color);
     color: var(--tertiary-color);
-    padding: 150px 70px;
+    padding: 150px 5.83%;
     column-gap: 8.33%;
 }
 
@@ -60,7 +60,7 @@
     border-top: 1px solid var(--tertiary-color);
     color: var(--tertiary-color);
     content: "";
-    width: 50%;
+    width: 100%;
     position: absolute;
 }
 
