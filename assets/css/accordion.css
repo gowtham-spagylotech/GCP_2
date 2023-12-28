@@ -23,11 +23,6 @@ img.minus-icon {
 }
 
 p.accordion-p-title {
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
     text-transform: uppercase;
     color: var(--secondary-color);
     margin-bottom: 30px;
@@ -70,6 +65,7 @@ h2.accordion-title {
 img.accordion-outerline-img {
     position: relative;
     z-index: 9;
+    width: 100%;
 }
 
 .accordion-icon {
@@ -244,5 +240,10 @@ h5.accordion-title-space {
         margin-left: 17%;
         top: 0;
         margin-bottom: 20px;
+    }
+
+    .accordion-title-with-img-col-1{
+        width: 100%;
+        margin-left: 0px;
     }
 }

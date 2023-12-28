@@ -1,0 +1,32 @@
+.researchList-container {
+    /* width: 55.556%;  */
+    /* width: 63.77%; */
+    width: 60.63%;
+    margin-left: 320px;
+    /* border-right: 1px solid rgba(0, 0, 0, 0.30); */
+    margin-right: 199.5px;
+}
+
+.researchList {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+span.researchList-arrow {
+    width: 2.376%;
+}
+
+p.researchList-p {
+    width: 97.375%;
+    text-decoration-line: underline;
+    border: none;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+.researchList-border-right {
+    margin-right: 119.5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}

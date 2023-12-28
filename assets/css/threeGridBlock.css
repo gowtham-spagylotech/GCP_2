@@ -116,6 +116,18 @@
 
 
 
+.aboutus-gridLogo {
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.aboutus-grid-description{
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+
+
 
 @media (max-width: 991.98px) {
 
