@@ -63,29 +63,14 @@ h2.accordion-title {
     position: relative;
 }
 
-.padding-border-top::before,
-.padding-border-top::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    height: 100%;
+.padding-border-top{
     border-top: 1px solid var(--light-Blue);
 }
 
-.padding-border-top::before {
-    left: 0;
-    width: 60.139%;
+img.accordion-outerline-img {
+    position: relative;
+    z-index: 9;
 }
-
-.padding-border-top::after {
-    right: 0;
-    width: 13.195%;
-}
-
-/* .padding-border-top{
-    border-top: 1px solid var(--light-Blue);
-} */
-
 
 .accordion-icon {
     border-right: 1px solid rgba(0, 0, 0, 0.30);
