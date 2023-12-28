@@ -1,0 +1,162 @@
+.gird-flex {
+    display: flex;
+}
+
+.grid-title h3 {
+    margin-bottom: 19.5px;
+}
+
+.grid-description p {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.column.grid {
+    width: 33.333%;
+    border-right: 1px solid var(--light-Blue);
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.column.grid-last {
+    width: 33.333%;
+    padding-right: 60px;
+    padding-left: 60px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.column.grid-1 {
+    width: 33.332%;
+    border-right: 1px solid var(--light-Blue);
+    padding-right: 75px;
+    padding-left: 45px;
+}
+
+.column.grid-2 {
+    width: 33.332%;
+    border-right: 1px solid var(--light-Blue);
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.column.grid-3 {
+    width: 33.332%;
+    padding-right: 59.5px;
+    padding-left: 60px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.gridLogo {
+    margin-top: 81px;
+    margin-bottom: 31.5px;
+}
+
+.top-bottom-border {
+    border-top: 1px solid var(--light-Blue);
+    border-bottom: 1px solid var(--light-Blue);
+}
+
+.container.three-grid-block {
+    border-left: 1px solid var(--light-Blue);
+}
+
+.empty-padding-border-bottom {
+    border-bottom: 1px solid var(--light-Blue);
+    /* remove margin-bottom:100px after separting the blocks */
+    margin-bottom: 100px;
+}
+
+.empty-padding-border {
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+    padding-top: 100px;
+}
+
+.grid-link {
+    text-align: center;
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+    padding-top: 30px;
+    padding-bottom: 33px;
+    text-align: center;
+}
+
+
+
+
+.column.grid-padding-1 {
+    width: 33.333%;
+    padding-left: 70px;
+    padding-right: 30px;
+    border-right: 1px solid var(--light-Blue);
+}
+
+.column.grid-padding-2 {
+    width: 33.333%;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-right: 1px solid var(--light-Blue);
+}
+
+.column.grid-padding-3 {
+    width: 33.333%;
+    padding-left: 30px;
+    padding-right: 69.5px;
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.grid-description-f20 h6 {
+    font-weight: 400;
+    margin-bottom: 81px;
+}
+
+.grid-description-f20.margin-top-102 {
+    margin-top: 102px;
+}
+
+
+
+
+@media (max-width: 991.98px) {
+
+    .column.grid {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-last {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-1 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-2 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-3 {
+        width: 100%;
+        border-right: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-padding-1 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-padding-2 {
+        width: 100%;
+        border-bottom: 1px solid var(--light-Blue);
+    }
+
+    .column.grid-padding-3 {
+        width: 100%;
+        border-right: 1px solid var(--light-Blue);
+    }
+
+}
