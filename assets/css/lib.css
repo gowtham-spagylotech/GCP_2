@@ -158,6 +158,9 @@ h6 strong, h6 b{
 }
 
 @media (max-width: 1100.98px){
+    .container {
+        max-width: 91.8%;
+    }
     h1{
         font-size: 50px;
         line-height: var(--line-height-normal);
