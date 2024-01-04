@@ -98,9 +98,14 @@ img.accordion-outerline-img {
     border: none;
 }
 
-.accordion:not(.active):hover {
+.accordion:not(.activeAccordion) {
     border-right: 1px solid rgba(0, 0, 0, 0.30);
-}
+  }
+  
+  /* Add this rule to hide the border for active accordions */
+  .accordion.activeAccordion {
+    border: none;
+  }
 
 .panel {
     background-color: transparent;
@@ -206,6 +211,11 @@ h5.accordion-title-space {
     transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
     position: relative;
 }
+
+.activeTitleSpace{
+    color: #fff;
+}
+
 
 @media (max-width: 991.98px) {
 

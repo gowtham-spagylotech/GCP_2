@@ -1,84 +1,55 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var acc = document.querySelectorAll(".accordion");
+$(document).ready(function () {
+  $(".accordion").on("click", function () {
+    $('.accordion-outerline-img').addClass('hide');
+    var panel = $(this).next(".panel");
+    var plusIcon = $(this).find(".plus-icon");
+    var minusIcon = $(this).find(".minus-icon");
+    var accordionBg = $(this).closest('.bg-img-accordion');
+    var outerlineImg = $('img.accordion-outerline-img');
+    var accordionTitleSpace = $(this).find(".accordion-title-space");
+    // Add a class to the clicked accordion
+    $(this).toggleClass("activeAccordion");
 
+    // Remove the class from all other accordions to make them inactive
+    $(".accordion").not(this).removeClass("activeAccordion");
 
-  acc.forEach(function (accordion) {
-    accordion.addEventListener("click", function () {
-      var panel = this.nextElementSibling;
-      if (panel) {
-        // Close all panels
-        acc.forEach(function (otherAccordion) {
-          var otherPanel = otherAccordion.nextElementSibling;
+    // Check if the panel is not open
+    if (panel.css("max-height") === "0px") {
+      // Panel is closed, open it
+      $(".panel").css("max-height", "0px");
+      $(".plus-icon").show();
+      $(".minus-icon").hide();
+      $(".bg-img-accordion").removeClass("activeBg"); // Remove activeBg from all elements
+      $("img.accordion-outerline-img").show(); // Show all outerline images
 
-          if (otherPanel && otherPanel !== panel) {
-            otherPanel.style.maxHeight = null;
-            resetAccordionStyles(otherAccordion);
-          }
-        });
+      panel.css("max-height", panel[0].scrollHeight + "px");
+      plusIcon.hide();
+      minusIcon.show();
 
-        // Toggle the "active" class on the clicked element
-        this.classList.toggle("active");
-        // panel.classList.toggle("activePanel")
-        // var bgImgAccordion = accordion.closest('.bg-img-accordion');
-        // setAccordionStyles(accordion);
-        // bgImgAccordion.classList.toggle("activeBg")
+      // Add the activeBg class to the background element of the clicked accordion
+      accordionBg.addClass("activeBg");
+      // Hide the outerline image for the active accordion
+      outerlineImg.hide();
 
-        // Remove the "active" class from all other accordion elements
-        acc.forEach(function (otherAccordion) {
-          if (otherAccordion !== accordion) {
-            otherAccordion.classList.remove("active");
-          }
-        });
+      // Add a class to change the color of accordion-title-space to #fff
+      $(".accordion-title-space").removeClass("activeTitleSpace");
+      accordionTitleSpace.addClass("activeTitleSpace");
+      // console.log("close");
 
-        // Toggle panel visibility
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-          resetAccordionStyles(accordion);
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-          setAccordionStyles(accordion);
-        }
-      }
-    });
+    } else {
+      // Panel is open, close it
+      panel.css("max-height", "0px");
+      plusIcon.show();
+      minusIcon.hide();
+      // console.log("open");
+
+      // Remove the activeBg class from the background element of the clicked accordion
+      accordionBg.removeClass("activeBg");
+      // Show the outerline image for the inactive accordion
+      outerlineImg.show();
+
+      // Remove the class to change the color of accordion-title-space to #06071B
+      accordionTitleSpace.removeClass("activeTitleSpace");
+    }
   });
 });
-
-// Function to reset styles for an accordion
-function resetAccordionStyles(accordion) {
-  var bgImgAccordion = accordion.closest('.bg-img-accordion');
-  bgImgAccordion.classList.remove("activeBg");
-
-  var titleSpace = accordion.querySelector('.accordion-title-space');
-  titleSpace.style.color = "#000";
-
-  var plusIcon = accordion.querySelector('.plus-icon');
-  var minusIcon = accordion.querySelector('.minus-icon');
-  plusIcon.style.display = "block";
-  minusIcon.style.display = "none";
-
-  var outerlineimage = document.querySelector('.accordion-outerline-img');
-  if (outerlineimage) {
-    outerlineimage.style.display = "block";
-  }
-
-}
-
-// Function to set styles for an accordion
-function setAccordionStyles(accordion) {
-  var bgImgAccordion = accordion.closest('.bg-img-accordion');
-  bgImgAccordion.classList.add("activeBg");
-
-  var titleSpace = accordion.querySelector('.accordion-title-space');
-  titleSpace.style.color = "#fff";
-
-  var plusIcon = accordion.querySelector('.plus-icon');
-  var minusIcon = accordion.querySelector('.minus-icon');
-  plusIcon.style.display = "none";
-  minusIcon.style.display = "block";
-
-  var outerlineimage = document.querySelector('.accordion-outerline-img');
-  if (outerlineimage) {
-    outerlineimage.style.display = "none";
-  }
-
-}

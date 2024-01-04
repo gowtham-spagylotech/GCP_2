@@ -1,10 +1,12 @@
-.researchList-container {
-    /* width: 55.556%;  */
-    /* width: 63.77%; */
+/* .researchList-container {
     width: 60.63%;
     margin-left: 320px;
-    /* border-right: 1px solid rgba(0, 0, 0, 0.30); */
     margin-right: 199.5px;
+} */
+
+.researchList-width {
+    width: 66.72%;
+    margin: auto;
 }
 
 .researchList {
@@ -27,6 +29,15 @@ p.researchList-p {
 }
 
 .researchList-border-right {
-    margin-right: 119.5px;
     border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+@media (max-width: 991.98px) {
+    span.researchList-arrow {
+        width: auto;
+    }
+
+    p.researchList-p{
+        width: 100%;
+    }
 }
