@@ -1,9 +1,8 @@
 /* Set the background of the content section with a cover image */
 .animation_section {
     position: relative;
-    background: url(../img/Animation_Bg..png) no-repeat;
+    background: url(../img/Animation_Bg.png) no-repeat;
     background-size: cover;
-    margin-bottom: -1px;
 }
 
 /* Set the background of the video section with a cover image and define its height */
@@ -11,18 +10,16 @@
     position: relative;
     background: url(../img/Video_Bg_.png) no-repeat;
     background-size: cover;
-    height: 694px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* Style for the main content within the video section */
 .video_section .main_content {
     background: url(../img/Main_Content_bg.png) no-repeat;
     background-size: cover;
-    width: 47.22%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 56.66%;
+    margin: auto;
     padding: 100px;
     color: var(--tertiary-color);
 }
@@ -42,6 +39,7 @@
     color: var(--tertiary-color);
     padding-top: 150px;
     padding-bottom: 150px;
+    align-items: center;
     column-gap: 8.33%;
 }
 
@@ -80,21 +78,34 @@
     font-weight: 700;
 }
 
-/* Media query for responsiveness on medium-sized screens */
-@media (max-width: 991.98px) {
 
-    /* Adjust styles for the animation section on smaller screens */
-    .animation_and_text_wrapper .left_animation,
-    .animation_and_text_wrapper .right_content {
-        width: 100%;
+@media (max-width: 1100.98px) {
+
+    /* Style for the main content wrapper within the animation section */
+    .animation_section .animation_and_text_wrapper {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        column-gap: 7.92%;
     }
 
-    .animation_and_text_wrapper .right_content {
-        margin-top: 8.33%;
+    .animation_and_text_wrapper .left_animation {
+        width: 44.05%;
     }
 
+    /* Adjust margin for right content on larger screens within the animation section */
+    .animation_and_text_wrapper .right_content {
+        width: 43.56%;
+    }
+
+    /* Set the background of the video section with a cover image and define its height */
+    .video_section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* Style for the main content within the video section */
     .video_section .main_content {
-        width: 57.22%;
+        width: 63.36%;
         padding: 80px;
     }
 }
@@ -102,19 +113,51 @@
 /* Media query for responsiveness on smaller screens */
 @media (max-width: 767.98px) {
 
-    /* Adjust styles for the video section on smaller screens */
-    .video_section .main_content {
-        width: 67.22%;
-        padding: 60px;
+    .animation_and_text_wrapper .left_animation,
+    .animation_and_text_wrapper .right_content {
+        width: 100%;
     }
+
+    .animation_and_text_wrapper .left_animation {
+        padding-bottom: 40px;
+    }
+
+    .animation_and_text_wrapper .right_content .bottom_space {
+        padding-bottom: 20px;
+    }
+
+
+    /* Add padding for spacing at the bottom of the video content */
+    .video_section .main_content .bottom_space {
+        padding-bottom: 20px;
+    }
+
+    /* Style for the main content wrapper within the animation section */
+    .animation_section .animation_and_text_wrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    /* Style for the main content within the video section */
+    .video_section .main_content {
+        width: 100%;
+        padding: 40px;
+    }
+
 }
 
 /* Media query for responsiveness on even smaller screens */
 @media (max-width: 575.98px) {
 
-    /* Further adjustments for the video section on very small screens */
-    .video_section .main_content {
-        width: 77.22%;
-        padding: 60px;
+    .animation_section {
+        background: url(../img/Animation_Bg_Mobile.png) no-repeat;
+        background-size: cover;
     }
+
+    .video_section {
+        position: relative;
+        background: url(../img/Video_Bg_Mobile.png) no-repeat;
+        background-size: cover;
+    }
+
 }

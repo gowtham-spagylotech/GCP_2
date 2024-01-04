@@ -8,7 +8,7 @@
 /* Style for the main content wrapper within the content section */
 .content_section .content_wrapper {
     border-left: 1px solid var(--tertiary-color);
-    border-right: 1px solid var(--tertiary-color);
+    border-right: 1px solid var(--primary-color);
     color: var(--tertiary-color);
     padding: 150px 5.83%;
     column-gap: 8.33%;

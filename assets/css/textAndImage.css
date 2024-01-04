@@ -1,7 +1,11 @@
+.text_and_image_section{
+    background-color: var(--tertiary-color);
+}
+
 /* Styling for the container within text_and_image_section */
 .text_and_image_section .container {
     border-left: 1px solid var(--light-Blue);
-    border-right: 1px solid var(--light-Blue);
+    border-right: 1px solid var(--primary-color);
 }
 
 /* Styling for the left text within text_and_image_section */

@@ -1,0 +1,106 @@
+.heroBanner {
+    position: relative;
+    background: url(../img/Aboutus_Banner_Bg.jpg) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero_division {
+    /* max-width: 66.66%; */
+    /* margin-left: 5.83%;
+    margin-right: 27.41%; */
+    padding-top: 286px;
+    padding-left: 5.83%;
+    padding-right: 27.41%;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.hero_division .title {
+    color: var(--tertiary-color);
+    padding-bottom: 30px;
+}
+
+.bannerContent .container {
+    position: relative;
+}
+
+
+.bannerContent .container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 30%;
+    border-right: 4px solid var(--tertiary-color);
+}
+
+.hero_division::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: 1px;
+    height: 70%;
+    border-right: 2px solid var(--primary-color);
+}
+
+
+.bannerContent h1,
+.bannerContent h6 {
+    color: var(--tertiary-color);
+    margin-bottom: 40px;
+}
+
+.bannerContent h6,
+.buttonWrapper {
+    width: 66%;
+    margin-right: 0;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.bannerContent .button,
+.bannerContent .hyperlink {
+    color: var(--tertiary-color);
+    border-color: var(--tertiary-color);
+}
+
+.bannerContent .hyperlink {
+    margin-left: 40px;
+}
+
+@media (max-width: 991.98px) {
+    .hero_division {
+        max-width: 100% !important;
+    }
+
+    .bannerContent .hyperlink {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    /* .bannerContent {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    } */
+
+    .bannerContent h1 {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .bannerContent h6 {
+        font-size: 24px;
+        line-height: normal;
+    }
+
+    .bannerContent h6,
+    .buttonWrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 575.98px) {}

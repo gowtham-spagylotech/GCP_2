@@ -13,6 +13,7 @@ header{
 .navbar{
     /* width: 37.25%; */
     width: max-content;
+    margin-right:5.83%;
 }
 .navigation .row{
     /* column-gap: 40.6%; */
@@ -125,12 +126,17 @@ header{
 }
 
 @media (max-width: 991.98px){
+    .hamburger {
+        margin-right:5.83%;
+    }
+    
     .hamburger .line {
         width: 35px;
         height: 3px;
         background: var(--tertiary-color);
         margin: 5px auto;
         transition: all 0.8s ease-in-out;
+        
     }
     #navbar{
         opacity: 0;
