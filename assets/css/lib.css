@@ -56,6 +56,9 @@ html {
     display: none !important;
 }
 
+.hide_mobile{
+    display: block !important;
+}
 .container {
     max-width: 83.34%;
     margin: auto;
@@ -291,8 +294,7 @@ h6 b {
     .show_mobile {
         display: block !important;
     }
-
-    .sectionSpace {
+    .sectionSpace{
         margin-bottom: 80px;
     }
 
