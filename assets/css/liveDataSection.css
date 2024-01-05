@@ -1,27 +1,27 @@
-/* Adjusting container style in live_data_section */
-.live_data_section .container {
+/* Adjusting container style in liveDataSection */
+.liveDataSection .container {
     border-right: 1px solid black;
 }
 
-/* Styling title in live_data_section */
-.live_data_section .title {
+/* Styling title in liveDataSection */
+.liveDataSection .title {
     color: var(--secondary-color);
     padding-top: 150px;
 }
 
-.live_data_section .header_content {
+.liveDataSection .headerContent {
     padding-left: 8.75%;
     padding-right: 8.75%;
 }
 
-/* Styling line_and_map_section */
-.line_and_map_section {
+/* Styling lineAndMapSection */
+.lineAndMapSection {
     margin-bottom: 30px;
     position: relative;
 }
 
-/* Styling the pseudo-element (::before) for line_and_map_section */
-.line_and_map_section::before {
+/* Styling the pseudo-element (::before) for lineAndMapSection */
+.lineAndMapSection::before {
     border-top: 1px solid var(--light-Blue);
     color: var(--tertiary-color);
     content: "";
@@ -31,31 +31,31 @@
     /* Adjust the position from the top */
 }
 
-/* Styling the border-bottom for line_and_map_section */
-.line_and_map_section {
+/* Styling the border-bottom for lineAndMapSection */
+.lineAndMapSection {
     border-bottom: 1px solid var(--light-Blue);
 }
 
 /* add bottom space */
-.live_data_section .title,
-.live_data_section h2 {
+.liveDataSection .title,
+.liveDataSection h2 {
     padding-bottom: 30px;
 }
 
-/* Centering text elements in live_data_section */
-.live_data_section .title,
-.live_data_section h2,
-.live_data_section h4 {
+/* Centering text elements in liveDataSection */
+.liveDataSection .title,
+.liveDataSection h2,
+.liveDataSection h4 {
     text-align: center;
 }
 
-/* Additional styling for live_data_section */
-.live_data_section h4 {
+/* Additional styling for liveDataSection */
+.liveDataSection h4 {
     padding-bottom: 48px;
 }
 
-/* Styling line_and_map_wrapper in live_data_section */
-.live_data_section .line_and_map_wrapper {
+/* Styling lineAndMapWrapper in liveDataSection */
+.liveDataSection .lineAndMapWrapper {
     padding-left: 5.83%;
     padding-right: 5.83%;
     column-gap: 16.66%;
@@ -63,13 +63,13 @@
 }
 
 /* Styling the vertical line */
-.line_and_map_wrapper .vertical_line {
+.lineAndMapWrapper .verticalLine {
     border-left: 1px solid var(--light-Blue);
     position: relative;
 }
 
 /* General styling for elements with class "general" */
-.line_heading {
+.lineHeading {
     font-family: 'Manrope', sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -82,16 +82,16 @@
     color: var(--primary-color);
 }
 
-/* Styling the vertical_line unordered list */
-.vertical_line ul {
+/* Styling the verticalLine unordered list */
+.verticalLine ul {
     list-style: none;
     padding: 0;
     margin: 0;
     transform: translateX(-2%);
 }
 
-/* Styling list items in vertical_line */
-.vertical_line ul li {
+/* Styling list items in verticalLine */
+.verticalLine ul li {
     list-style: none;
     display: flex;
     align-items: center;
@@ -101,46 +101,46 @@
 }
 
 /* Styling span within list items */
-.vertical_line ul li span {
+.verticalLine ul li span {
     margin-left: 15px;
 }
 
 /* Adjusting margin for the first and last list items */
-.vertical_line ul li:first-child {
+.verticalLine ul li:first-child {
     margin-top: 36px;
 }
 
-.vertical_line ul li:last-child {
+.verticalLine ul li:last-child {
     margin-bottom: 148px;
     padding-bottom: 0px;
 }
 
-/* Styling live_Data_Map in live_data_section */
-.live_data_section .live_Data_Map {
+/* Styling liveDataMap in liveDataSection */
+.liveDataSection .liveDataMap {
     width: 41.25%;
     padding-top: 59.38px;
     padding-bottom: 59.38px;
 }
 
-/* Styling map_and_info and data_info */
+/* Styling map_and_info and dataInfo */
 .map_and_info {
     display: flex;
 }
 
-.data_info {
+.dataInfo {
     position: absolute;
     top: 42px;
     right: 6%;
 }
 
-/* Styling tooltip and tooltip text */
-.tooltip {
+/* Styling toolTip and toolTip text */
+.toolTip {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
-.tooltip .tooltiptext {
+.toolTip .toolTipText {
     visibility: hidden;
     width: 270px;
     background-color: #EDEDED;
@@ -161,7 +161,7 @@
     transform: translate(-48%, 0%);
 }
 
-.tooltip .tooltiptext::after {
+.toolTip .toolTipText::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -174,12 +174,12 @@
 }
 
 
-.tooltip:hover .tooltiptext {
+.toolTip:hover .toolTipText {
     visibility: visible;
 }
 
-/* Styling increase_and_decrease section */
-.increase_and_decrease {
+/* Styling increaseAndDecrease section */
+.increaseAndDecrease {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -188,18 +188,18 @@
 }
 
 /* Styling increase and decrease buttons */
-.increase_and_decrease .increase_button {
+.increaseAndDecrease .increaseButton {
     background-color: #3754AB;
     color: #ffff;
 }
 
-.increase_and_decrease .decrease_button {
+.increaseAndDecrease .decreaseButton {
     color: #3754AB;
     background-color: #ffff;
 }
 
-.increase_and_decrease .increase_button,
-.increase_and_decrease .decrease_button {
+.increaseAndDecrease .increaseButton,
+.increaseAndDecrease .decreaseButton {
     width: 60px;
     height: 60px;
     font-size: 32px;
@@ -214,8 +214,8 @@
 /* Media queries for responsiveness */
 @media only screen and (max-width: 1200px) {
 
-    /* Styling line_and_map_wrapper in live_data_section */
-    .live_data_section .line_and_map_wrapper {
+    /* Styling lineAndMapWrapper in liveDataSection */
+    .liveDataSection .lineAndMapWrapper {
         padding-left: 2%;
         padding-right: 2%;
         position: relative;
@@ -223,29 +223,29 @@
 }
 
 @media only screen and (max-width: 991.98px) {
-    .live_data_section .title {
+    .liveDataSection .title {
         padding-top: 100px;
     }
 
-    .live_data_section .header_content {
+    .liveDataSection .headerContent {
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .line_and_map_section {
+    .lineAndMapSection {
         margin-bottom: 30px;
     }
 
-    .live_data_section .live_Data_Map {
+    .liveDataSection .liveDataMap {
         width: 100%;
     }
 
-    .line_and_map_wrapper {
+    .lineAndMapWrapper {
         flex-direction: column;
         align-items: center;
     }
 
-    .vertical_line {
+    .verticalLine {
         order: 1;
         margin-top: 20px;
         /* Adjust as needed */
@@ -253,14 +253,14 @@
         /* Adjust as needed */
     }
 
-    .vertical_line ul {
+    .verticalLine ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         transform: translate(0,-8px);
     }
 
-    .vertical_line ul li {
+    .verticalLine ul li {
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -268,32 +268,32 @@
         align-items: center;
     }
 
-    .vertical_line ul li span {
+    .verticalLine ul li span {
         padding-top: 10px;
     }
 
     /* Adjusting margin for the first and last list items */
-    .vertical_line ul li:first-child {
+    .verticalLine ul li:first-child {
         margin-top: 0px;
     }
 
-    .vertical_line ul li:last-child {
+    .verticalLine ul li:last-child {
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
 
     /* Styling the vertical line */
-    .line_and_map_wrapper .horizontal_line {
+    .lineAndMapWrapper .horizontalLine {
         border-top: 1px solid var(--light-Blue);
         position: relative;
     }
 
     /* Styling the vertical line */
-    .line_and_map_wrapper .vertical_line {
+    .lineAndMapWrapper .verticalLine {
         border: none;
     }
 
-    .line_heading {
+    .lineHeading {
         margin-top: 72px;
         margin-left: 0px;
         margin-bottom: 50px;

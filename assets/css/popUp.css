@@ -1,8 +1,8 @@
-.teamPopUp {
+.teamPopup {
   position: relative;
 }
 
-.teamPopUp .popup {
+.teamPopup .popup {
   display: none;
   position: fixed;
   top: 0;
@@ -13,7 +13,7 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.teamPopUp .popup-content {
+.teamPopup .popupContent {
   background-color:var(--tertiary-color);
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,15 +30,15 @@
   transform: translate(0,-50%);
 }
 
-.teamPopUp .blueCloseIcon{
+.teamPopup .blueCloseIcon{
   display: block;
 }
 
-.teamPopUp .whiteCloseIcon{
+.teamPopup .whiteCloseIcon{
   display: none;
 }
 
-.teamPopUp .profile {
+.teamPopup .profile {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -46,25 +46,25 @@
   position: relative;
 }
 
-.teamPopUp .userImage {
+.teamPopup .userImage {
   padding: 10%;
 }
 
-.teamPopUp .userImage img{
+.teamPopup .userImage img{
   width: 100%;
 }
 
-.teamPopUp .popUpText {
+.teamPopup .popUpText {
   width: 70%;
   /* padding: 149px 137px 93px 63px; */
   padding: 14.9% 13.7% 9.3% 6.3%;
 }
 
-.teamPopUp .popUpTextWrapper{
+.teamPopup .popUpTextWrapper{
   height: 374px;
   overflow: auto;
 }
-.teamPopUp .info {
+.teamPopup .info {
   background-color: var(--secondary-color);
   color: var(--tertiary-color);
   /* padding: 40px 60px 119px 40px; */
@@ -74,16 +74,16 @@
   width: 100%;
 }
 
-.teamPopUp .bottom_space {
+.teamPopup .bottomSpace {
   margin-bottom: 10px;
 }
 
-.teamPopUp .info .row {
+.teamPopup .info .row {
   align-items: center;
   margin-top: 22px;
 }
 
-.teamPopUp .info svg {
+.teamPopup .info svg {
   margin-right: 5.25px;
 }
 
@@ -97,7 +97,7 @@
 
 @media (max-width: 991.98px){
 
-  .teamPopUp .profile {
+  .teamPopup .profile {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -105,26 +105,26 @@
     position: relative;
   }
 
-  .teamPopUp .userImage {
+  .teamPopup .userImage {
     width: 50%;
   }
 
-  .teamPopUp .info {
+  .teamPopup .info {
     width: 50%;
     top: 0;
     right: 0;
     padding: 10%;
   }
 
-  .teamPopUp .popUpText {
+  .teamPopup .popUpText {
     width: 100%;
   }
 
-  .teamPopUp .blueCloseIcon{
+  .teamPopup .blueCloseIcon{
     display: none;
   }
   
-  .teamPopUp .whiteCloseIcon{
+  .teamPopup .whiteCloseIcon{
     display: block;
   }
 
@@ -135,7 +135,7 @@
 
 @media (max-width: 767.98px){
 
-  .teamPopUp .profile {
+  .teamPopup .profile {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -143,25 +143,25 @@
     position: relative;
   }
 
-  .teamPopUp .userImage {
+  .teamPopup .userImage {
     width: 100%;
   }
 
-  .teamPopUp .info {
+  .teamPopup .info {
     width: 100%;
     position: relative;
     padding: 10%;
   }
 
-  .teamPopUp .popUpText {
+  .teamPopup .popUpText {
     width: 100%;
   }
 
-  .teamPopUp .blueCloseIcon{
+  .teamPopup .blueCloseIcon{
     display: block;
   }
   
-  .teamPopUp .whiteCloseIcon{
+  .teamPopup .whiteCloseIcon{
     display: none;
   }
 

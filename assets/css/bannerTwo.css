@@ -62,12 +62,12 @@
 }
 
 .bannerContent .button,
-.bannerContent .hyperlink {
+.bannerContent .hyperLink {
     color: var(--tertiary-color);
     border-color: var(--tertiary-color);
 }
 
-.bannerContent .hyperlink {
+.bannerContent .hyperLink {
     margin-left: 40px;
 }
 
@@ -76,7 +76,7 @@
         max-width: 100% !important;
     }
 
-    .bannerContent .hyperlink {
+    .bannerContent .hyperLink {
         margin-left: 0px;
     }
 }

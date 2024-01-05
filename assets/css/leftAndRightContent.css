@@ -1,12 +1,12 @@
 /* Set the background of the content section with a cover image */
-.content_section {
+.contentSection {
     position: relative;
-    background: url(../img/left_and_right_content_Bg.png) no-repeat;
+    background: url(../img/leftAndRightContentBg.png) no-repeat;
     background-size: cover;
 }
 
 /* Style for the main content wrapper within the content section */
-.content_section .content_wrapper {
+.contentSection .contentWrapper {
     border-left: 1px solid var(--tertiary-color);
     border-right: 1px solid var(--primary-color);
     color: var(--tertiary-color);
@@ -15,48 +15,48 @@
 }
 
 /* Style for the left and right content columns */
-.content_section .left_content,
-.content_section .right_content {
+.contentSection .leftContent,
+.contentSection .rightContent {
     width: 40%;
 }
 
 /* Styling for the description in the left content */
-.content_section .left_content .left_description {
+.contentSection .leftContent .leftDescription {
     font-family: 'Manrope', sans-serif;
     font-weight: 300;
 }
 
 /* Add padding to specific elements */
-.content_section .left_content h2,
-.content_section .right_content h6,
-.content_section .right_content .mainTitle {
+.contentSection .leftContent h2,
+.contentSection .rightContent h6,
+.contentSection .rightContent .mainTitle {
     padding-bottom: 30px;
 }
 
 /* Additional styling for certain heading elements */
-.content_section .right_content h6 {
+.contentSection .rightContent h6 {
     padding-bottom: 30px;
     font-weight: 700;
 }
 
 /* Styling for links in the right content */
-.content_section .right_content a,
-.content_section .right_content a {
+.contentSection .rightContent a,
+.contentSection .rightContent a {
     color: var(--tertiary-color);
     border-bottom: 2px solid var(--tertiary-color);
 }
 
 /* Styling for specific divisions in the right content */
-.right_content .apply_division,
-.right_content .donation_division .content {
+.rightContent .applyDivision,
+.rightContent .donationDivision .content {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 /* Styling for horizontal lines in the right content */
-.content_section .right_content::before,
-.content_section .right_content .donation_division .line::before,
-.content_section .right_content::after {
+.contentSection .rightContent::before,
+.contentSection .rightContent .donationDivision .line::before,
+.contentSection .rightContent::after {
     border-top: 1px solid var(--tertiary-color);
     color: var(--tertiary-color);
     content: "";
@@ -68,25 +68,25 @@
 @media (max-width: 991.98px) {
     
     /* Adjust width for left and right content columns on smaller screens */
-    .content_section .left_content,
-    .content_section .right_content {
+    .contentSection .leftContent,
+    .contentSection .rightContent {
         width: 100%;
     }
 
     /* Remove right margin for left content on smaller screens */
-    .content_section .left_content {
+    .contentSection .leftContent {
         margin-bottom: 4.16%
     }
 
     /* Adjust margin for right content on smaller screens */
-    .content_section .right_content {
+    .contentSection .rightContent {
         margin-top: 4.16%
     }
 
     /* Styling for horizontal lines in the right content */
-    .content_section .right_content::before,
-    .content_section .right_content .donation_division .line::before,
-    .content_section .right_content::after {
+    .contentSection .rightContent::before,
+    .contentSection .rightContent .donationDivision .line::before,
+    .contentSection .rightContent::after {
         width: 100%;
     }
 

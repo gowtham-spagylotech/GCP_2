@@ -25,11 +25,11 @@
     flex-wrap: wrap;
     row-gap: 40px;
 }
-.bannerContent .button, .bannerContent .hyperlink{
+.bannerContent .button, .bannerContent .hyperLink{
     color: var(--tertiary-color);
     border-color: var(--tertiary-color);
 }
-.bannerContent .hyperlink{
+.bannerContent .hyperLink{
     margin-left: 40px;
 } 
 
@@ -37,7 +37,7 @@
     .heroContainer {
         max-width: 100% !important;
     }
-    .bannerContent .hyperlink {
+    .bannerContent .hyperLink {
         margin-left: 0px;
     }
 }

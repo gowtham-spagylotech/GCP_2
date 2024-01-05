@@ -1,22 +1,22 @@
 /* Set the background of the content section with a cover image */
-.animation_section {
+.animationSection {
     position: relative;
-    background: url(../img/Animation_Bg.png) no-repeat;
+    background: url(../img/animationBg.png) no-repeat;
     background-size: cover;
 }
 
 /* Set the background of the video section with a cover image and define its height */
-.video_section {
+.videoSection {
     position: relative;
-    background: url(../img/Video_Bg_.png) no-repeat;
+    background: url(../img/videoBg.png) no-repeat;
     background-size: cover;
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 /* Style for the main content within the video section */
-.video_section .main_content {
-    background: url(../img/Main_Content_bg.png) no-repeat;
+.videoSection .mainContent {
+    background: url(../img/mainContentBg.png) no-repeat;
     background-size: cover;
     width: 56.66%;
     margin: auto;
@@ -25,17 +25,17 @@
 }
 
 /* Add padding for spacing at the bottom of the video content */
-.video_section .main_content .bottom_space {
+.videoSection .mainContent .bottomSpace {
     padding-bottom: 30px;
 }
 
 /* Styling for the heading within the video content */
-.video_section .main_content h5 {
+.videoSection .mainContent h5 {
     font-weight: 800;
 }
 
 /* Style for the main content wrapper within the animation section */
-.animation_section .animation_and_text_wrapper {
+.animationSection .animationAndTextWrapper {
     color: var(--tertiary-color);
     padding-top: 150px;
     padding-bottom: 150px;
@@ -44,37 +44,37 @@
 }
 
 /* Adjust margin for left content on larger screens within the animation section */
-.animation_and_text_wrapper .left_animation {
+.animationAndTextWrapper .leftAnimation {
     width: 45.83%;
 }
 
 /* Adjust margin for right content on larger screens within the animation section */
-.animation_and_text_wrapper .right_content {
+.animationAndTextWrapper .rightContent {
     width: 40%;
 }
 
 /* Set styling for the image within the left content in the animation section */
-.animation_and_text_wrapper .left_animation img {
+.animationAndTextWrapper .leftAnimation img {
     width: 100%;
 }
 
 /* Apply italic font style for specific elements */
-.italic_font {
+.italicFont {
     font-style: italic;
     font-weight: 300;
 }
 
-.animation_section .right_content .title {
+.animationSection .rightContent .title {
     text-transform: uppercase;
 }
 
 /* Adjust margin and styling for various elements within the right content in the animation section */
-.animation_and_text_wrapper .right_content .bottom_space {
+.animationAndTextWrapper .rightContent .bottomSpace {
     padding-bottom: 30px;
 }
 
 /* Adjust margin and styling for various elements within the right content in the animation section */
-.animation_and_text_wrapper .right_content .hight_light {
+.animationAndTextWrapper .rightContent .hightLight {
     font-weight: 700;
 }
 
@@ -82,29 +82,29 @@
 @media (max-width: 1100.98px) {
 
     /* Style for the main content wrapper within the animation section */
-    .animation_section .animation_and_text_wrapper {
+    .animationSection .animationAndTextWrapper {
         padding-top: 120px;
         padding-bottom: 120px;
         column-gap: 7.92%;
     }
 
-    .animation_and_text_wrapper .left_animation {
+    .animationAndTextWrapper .leftAnimation {
         width: 44.05%;
     }
 
     /* Adjust margin for right content on larger screens within the animation section */
-    .animation_and_text_wrapper .right_content {
+    .animationAndTextWrapper .rightContent {
         width: 43.56%;
     }
 
     /* Set the background of the video section with a cover image and define its height */
-    .video_section {
+    .videoSection {
         padding-top: 80px;
         padding-bottom: 80px;
     }
 
     /* Style for the main content within the video section */
-    .video_section .main_content {
+    .videoSection .mainContent {
         width: 63.36%;
         padding: 80px;
     }
@@ -113,33 +113,33 @@
 /* Media query for responsiveness on smaller screens */
 @media (max-width: 767.98px) {
 
-    .animation_and_text_wrapper .left_animation,
-    .animation_and_text_wrapper .right_content {
+    .animationAndTextWrapper .leftAnimation,
+    .animationAndTextWrapper .rightContent {
         width: 100%;
     }
 
-    .animation_and_text_wrapper .left_animation {
+    .animationAndTextWrapper .leftAnimation {
         padding-bottom: 40px;
     }
 
-    .animation_and_text_wrapper .right_content .bottom_space {
+    .animationAndTextWrapper .rightContent .bottomSpace {
         padding-bottom: 20px;
     }
 
 
     /* Add padding for spacing at the bottom of the video content */
-    .video_section .main_content .bottom_space {
+    .videoSection .mainContent .bottomSpace {
         padding-bottom: 20px;
     }
 
     /* Style for the main content wrapper within the animation section */
-    .animation_section .animation_and_text_wrapper {
+    .animationSection .animationAndTextWrapper {
         padding-top: 80px;
         padding-bottom: 80px;
     }
 
     /* Style for the main content within the video section */
-    .video_section .main_content {
+    .videoSection .mainContent {
         width: 100%;
         padding: 40px;
     }
@@ -149,14 +149,14 @@
 /* Media query for responsiveness on even smaller screens */
 @media (max-width: 575.98px) {
 
-    .animation_section {
-        background: url(../img/Animation_Bg_Mobile.png) no-repeat;
+    .animationSection {
+        background: url(../img/animationMobileBg.png) no-repeat;
         background-size: cover;
     }
 
-    .video_section {
+    .videoSection {
         position: relative;
-        background: url(../img/Video_Bg_Mobile.png) no-repeat;
+        background: url(../img/videoMobileBg.png) no-repeat;
         background-size: cover;
     }
 

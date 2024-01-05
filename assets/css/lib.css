@@ -40,23 +40,23 @@ html {
     touch-action: manipulation;
 }
 
-.show_desktop {
+.showDesktop {
     display: block !important;
 }
 
-.show_tablet {
+.showTablet {
     display: none !important;
 }
 
-.show_mobile {
+.showMobile {
     display: none !important;
 }
 
-.hide_desktop {
+.hideDesktop {
     display: none !important;
 }
 
-.hide_mobile{
+.hideMobile{
     display: block !important;
 }
 .container {
@@ -171,7 +171,7 @@ h6 b {
     cursor: pointer;
 }
 
-.hyperlink {
+.hyperLink {
     text-align: center;
     font-family: 'Inter Tight', sans-serif;
     font-size: var(--font-size-16);
@@ -242,7 +242,7 @@ h6 b {
         line-height: var(--line-height-normal);
     }
 
-    .hyperlink {
+    .hyperLink {
         font-size: var(--font-size-16);
         line-height: var(--line-height-normal);
     }
@@ -254,19 +254,19 @@ h6 b {
         margin: auto;
     }
 
-    .show_tablet {
+    .showTablet {
         display: block !important;
     }
 
-    .show_desktop {
+    .showDesktop {
         display: none !important;
     }
 
-    .show_mobile {
+    .showMobile {
         display: none !important;
     }
 
-    .hide_desktop {
+    .hideDesktop {
         display: block !important;
     }
 
@@ -283,15 +283,15 @@ h6 b {
         margin: auto;
     }
 
-    .show_tablet {
+    .showTablet {
         display: none !important;
     }
 
-    .show_desktop {
+    .showDesktop {
         display: none !important;
     }
 
-    .show_mobile {
+    .showMobile {
         display: block !important;
     }
     .sectionSpace{
@@ -348,7 +348,7 @@ h6 b {
         line-height: var(--line-height-normal);
     }
 
-    .hyperlink {
+    .hyperLink {
         font-size: 15px;
         line-height: var(--line-height-normal);
     }

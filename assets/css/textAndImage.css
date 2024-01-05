@@ -1,44 +1,44 @@
-.text_and_image_section{
+.textAndImageSection{
     background-color: var(--tertiary-color);
 }
 
-/* Styling for the container within text_and_image_section */
-.text_and_image_section .container {
+/* Styling for the container within textAndImageSection */
+.textAndImageSection .container {
     border-left: 1px solid var(--light-Blue);
     border-right: 1px solid var(--primary-color);
 }
 
-/* Styling for the left text within text_and_image_section */
-.text_and_image_section .left_text {
+/* Styling for the left text within textAndImageSection */
+.textAndImageSection .leftText {
     width: 40%;
     margin: 150px 12.5% 150px 5.83%;
 }
 
-/* Styling for the title within left_text */
-.text_and_image_section .left_text .title {
+/* Styling for the title within leftText */
+.textAndImageSection .leftText .title {
     color: var(--secondary-color);
 }
 
-/* Styling for the right image within text_and_image_section */
-.text_and_image_section .right_image {
+/* Styling for the right image within textAndImageSection */
+.textAndImageSection .rightImage {
     width: 41.66%;
     position: relative;
 }
 
-/* Styling for images within text_and_image_section */
-.text_and_image_section img {
+/* Styling for images within textAndImageSection */
+.textAndImageSection img {
     width: 100%;
     position: absolute;
     bottom: 0;
 }
 
-/* Styling for high_light class */
-.high_light {
+/* Styling for highLight class */
+.highLight {
     font-weight: 800;
 }
 
 /* Styling for adding bottom space */
-.bottom_space {
+.bottomSpace {
     padding-bottom: 30px;
 }
 
@@ -51,27 +51,27 @@
 @media only screen and (max-width: 991.98px) {
 
     /* Adjusting layout for smaller screens */
-    .text_and_image_wrapper {
+    .textAndImageWrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
 
-    .text_and_image_section .left_text {
+    .textAndImageSection .leftText {
         width: 48.38%;
         margin: 150px 5.83% 12.5% 5.83%;
     }
 
-    .text_and_image_section .left_text .title {
+    .textAndImageSection .leftText .title {
         color: var(--secondary-color);
     }
 
-    .text_and_image_section .right_image {
+    .textAndImageSection .rightImage {
         width: 50.45%;
     }
 
-    .text_and_image_section img {
+    .textAndImageSection img {
         position: relative;
     }
 }
@@ -80,12 +80,12 @@
 @media only screen and (max-width: 767.98px) {
 
     /* Further adjustments for smaller screens */
-    .text_and_image_section .left_text {
+    .textAndImageSection .leftText {
         width: 62.50%;
         margin: 150px 9.11% 19.53% 9.11%;
     }
 
-    .text_and_image_section .right_image {
+    .textAndImageSection .rightImage {
         width: 65.18%;
     }
 }
