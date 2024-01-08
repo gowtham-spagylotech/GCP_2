@@ -4,9 +4,9 @@ $(document).ready(function () {
     var panel = $(this).next(".panel");
     var plusIcon = $(this).find(".plus-icon");
     var minusIcon = $(this).find(".minus-icon");
-    var accordionBg = $(this).closest('.bg-img-accordion');
+    var accordionBg = $(this).closest('.bgImgAccordion');
     var outerlineImg = $('img.accordion-outerline-img');
-    var accordionTitleSpace = $(this).find(".accordion-title-space");
+    var accordionTitleSpace = $(this).find(".accordionTitleSpace");
     // Add a class to the clicked accordion
     $(this).toggleClass("activeAccordion");
 
@@ -19,7 +19,7 @@ $(document).ready(function () {
       $(".panel").css("max-height", "0px");
       $(".plus-icon").show();
       $(".minus-icon").hide();
-      $(".bg-img-accordion").removeClass("activeBg"); // Remove activeBg from all elements
+      $(".bgImgAccordion").removeClass("activeBg"); // Remove activeBg from all elements
       $("img.accordion-outerline-img").show(); // Show all outerline images
 
       panel.css("max-height", panel[0].scrollHeight + "px");
@@ -31,8 +31,8 @@ $(document).ready(function () {
       // Hide the outerline image for the active accordion
       outerlineImg.hide();
 
-      // Add a class to change the color of accordion-title-space to #fff
-      $(".accordion-title-space").removeClass("activeTitleSpace");
+      // Add a class to change the color of accordionTitleSpace to #fff
+      $(".accordionTitleSpace").removeClass("activeTitleSpace");
       accordionTitleSpace.addClass("activeTitleSpace");
       // console.log("close");
 
@@ -48,7 +48,7 @@ $(document).ready(function () {
       // Show the outerline image for the inactive accordion
       outerlineImg.show();
 
-      // Remove the class to change the color of accordion-title-space to #06071B
+      // Remove the class to change the color of accordionTitleSpace to #06071B
       accordionTitleSpace.removeClass("activeTitleSpace");
     }
   });

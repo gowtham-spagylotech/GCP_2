@@ -28,16 +28,16 @@ img.minus-icon {
     margin-left: 70px;
 }
 
-.padding-border-top-bottom {
+.paddingBorderTop-bottom {
     border-bottom: 1px solid var(--light-Blue);
     border-top: 1px solid var(--light-Blue);
 }
 
-.padding-border-bottom {
+.paddingBorderBottom {
     border-bottom: 1px solid var(--light-Blue);
 }
 
-.padding-border-top {
+.paddingBorderTop {
     border-top: 1px solid var(--light-Blue);
 }
 
@@ -45,10 +45,10 @@ img.minus-icon {
     border-right: 1px solid rgba(0, 0, 0, 0.30);
 }
 
-.accordion-margin {
+/* .accordion-margin {
     margin-left: 190px;
     margin-right: 119.5px;
-}
+} */
 
 .accordion {
     cursor: pointer;
@@ -63,6 +63,7 @@ img.minus-icon {
     border-right: 1px solid rgba(0, 0, 0, 0.30);
     display: flex;
     align-items: center;
+    padding-left: 70px;
 
 }
 
@@ -91,7 +92,7 @@ img.minus-icon {
     width: 42.479%;
 }
 
-h5.accordion-title-space {
+h5.accordionTitleSpace {
     margin-left: 40px;
     width: 76.958%;
 }
@@ -153,6 +154,7 @@ h5.accordion-title-space {
 .row.no-wrap {
     flex-wrap: nowrap;
     column-gap: 120.74px;
+    padding-left: 70px;
 }
 
 .accordion-banner-right-img img {
@@ -165,7 +167,7 @@ h5.accordion-title-space {
     border-right: 1px solid #000;
 }
 
-.bg-img-accordion.activeBg {
+.bgImgAccordion.activeBg {
     background: url("../img/Accordion-Bg.jpg") no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -181,13 +183,14 @@ h5.accordion-title-space {
 
 @media (max-width: 991.98px) {
 
-    .accordion-margin {
-        margin-left: 0px;
+    .accordion {
+        padding: 0;
     }
 
     .row.no-wrap {
         flex-wrap: wrap;
         row-gap: 50px;
+        padding: 0;
     }
 
     .accordion-column-1 {
