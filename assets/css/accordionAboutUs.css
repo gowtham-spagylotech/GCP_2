@@ -77,6 +77,10 @@ img.minus-icon {
     border-right: 1px solid rgba(0, 0, 0, 0.30);
 }
 
+  /* Add this rule to hide the border for active accordions */
+  .accordion.activeAccordion {
+    border: none !important;
+  }
 
 
 .panel {
@@ -84,8 +88,10 @@ img.minus-icon {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease-out;
-    margin-left: 150px;
-    width: 76.958%;
+    /* margin-left: 150px;
+    width: 76.958%; */
+    margin-left: 220px;
+    width: 72.5%;
 }
 
 .accordion-column-1 {
@@ -94,7 +100,8 @@ img.minus-icon {
 
 h5.accordionTitleSpace {
     margin-left: 40px;
-    width: 76.958%;
+    /* width: 76.958%; */
+    width: 77.06%;
 }
 
 .accordion-line-height {
@@ -203,5 +210,9 @@ h5.accordionTitleSpace {
 
     #accordion-order-2 {
         order: 2;
+    }
+    
+    .panel{
+        margin-left: 150px;
     }
 }
