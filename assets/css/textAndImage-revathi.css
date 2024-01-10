@@ -1,0 +1,145 @@
+
+.fontWeight800 {
+    font-weight: 800;
+}
+
+.textandimage {
+    padding-top: 17.03%;
+    padding-bottom: 17.1%;
+    align-items: center;
+    column-gap: 11.16%;
+    position: relative;
+}
+
+.textandimage .desktopImage {
+    display: block;
+}
+
+.textandimage .tabImage {
+    display: none;
+}
+
+.textandimage .leftText {
+    width: 40.1%;
+}
+
+.textandimage .rightImage {
+    width: 43.08%;
+    position: absolute; 
+    right: 0;
+}
+
+.textandimage .rightImage .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textandimage .leftText {
+    margin-left: 5.83%;
+}
+
+.textAndImageSideBorder {
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid var(--dark-Grey);
+}
+
+.textandimage .leftText p {
+    color: var(--secondary-color);
+    text-transform: uppercase;
+}
+
+.textandimage .leftText h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.imageWrapper .image_1 {
+    width: 376px;
+    /* position: absolute; */
+    /* z-index: -1; */
+}
+
+.imageWrapper .image_2 {
+    /* width: 100%; */
+    position: absolute;
+    mix-blend-mode: overlay;
+}
+
+@media (max-width: 1100.98px) {
+    .textandimage .leftText {
+        width: 43.56%;
+        padding-left: 4.45%;
+    }
+
+    .textandimage .rightImage {
+        width: 41.08%;
+        /* right: -13px; */
+    }
+
+    .textandimage {
+        column-gap: 12.17%;
+    } 
+
+.imageWrapper .image_1 {
+    width: 240px;
+}
+
+.imageWrapper .image_2 {
+    width: 100%;
+    position: absolute;
+  
+}
+.textandimagebg.bg-image {
+    position: relative;
+    background: url(../img/Bg-image.png) no-repeat;
+    background-size: cover;
+    margin-bottom: -1px;
+}
+
+}
+
+@media (max-width: 767.98px) {
+    .textAndImage .container {
+        border: 0px
+    }
+    
+    .textAndImage .row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    .textAndImage {
+        padding-top: 21.5%;
+        padding-bottom: 21%;
+        align-items: center;
+        column-gap: 11.16%;
+        position: relative;
+    }
+
+    .textAndImage .leftText {
+        width: 100%;
+        order: 2;
+        margin-top: 12.5%;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .textAndImage .rightImage {
+        width: 100%;
+        order: 1;
+        position: relative;
+    }
+
+    .textAndImage .leftText h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .textAndImageSideBorder {
+        border: none;
+    }
+}

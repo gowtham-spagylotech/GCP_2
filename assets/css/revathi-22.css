@@ -1,0 +1,126 @@
+/* Team List Block */
+
+.image-container .name {
+    visibility: hidden;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    padding-left: 18px;
+    border-radius: 2px;
+}
+
+.image-container .name.title {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    bottom: -52px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.image-container:hover .name {
+    visibility: visible;
+}
+
+.teamListBlock {
+    padding-top: 150px;
+}
+
+.sideBorder {
+    border-left: 1px solid rgba(0, 0, 0, 0.30);
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.topBorder {
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.teamListBlock .space {
+    column-gap: 5.06%;
+    width: 94.4%;
+    margin-left: 5.92%;
+}
+
+.teamListBlock h5 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 800;
+}
+
+.teamListBlock h4 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+.rowspace {
+    margin-top: 125px;
+    /* margin-bottom: 125px; */
+}
+
+img.teamList-image {
+    display: block;
+}
+
+.overlay-color {
+    visibility: visible;
+    /* padding: 0.869% 8.334%; */
+    padding: 12px 120px;
+    position: absolute;
+    background: var(--secondary-color);
+}
+
+.image-container:hover .overlay-color {
+    visibility: hidden;
+}
+
+
+
+/* Research Team List Block */
+.researchTeam h3 {
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+
+.researchTeam .space {
+    column-gap: 5.06%;
+    width: 94.4%;
+    margin-left: 5.92%;
+}
+
+.imageandtext .title {
+    color: var(--secondary-color);
+}
+
+.imageandtext .column {
+    width: 41%;
+}
+
+.spacing {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.imageandtext {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    justify-content: space-between;
+}
+
+.imageandtext .title {
+    padding-top: 175px;
+}
+
+.content-space {
+    padding-top: 221px;
+}

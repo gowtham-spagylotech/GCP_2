@@ -1,0 +1,143 @@
+/* image and text with bg */
+.imageAndTextBg .row {
+    justify-content: space-between;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.imageAndTextBg .leftImage, .rightText {
+    width: 40.1%;
+}
+.imageAndTextBg .image-1 {
+    mix-blend-mode: overlay;
+}
+.imageAndTextBg.animation_section {
+    position: relative;
+    background: url(../img/Bg-2.png) no-repeat;
+    background-size: cover;
+    margin-bottom: -1px;
+}
+ .imageAndTextBg img.leftImgOverlay {
+    position: absolute;
+    top: 27%;
+    right: 0;
+}
+.imageAndTextBg .shapeCenter {
+    left:190px;
+}
+.imageAndTextBg .rightText{
+    color: #fff;
+    padding-top: 42px;
+    padding-bottom: 42px;
+}
+.imageAndTextBg .title {
+    color: #fff;
+}
+.regular {
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+
+/* Media query for screens up to 991.98px width */
+@media only screen and (max-width: 991.98px) {
+    
+    .imageAndTextBg.bg-image {
+        position: relative;
+        background: url(../img/Bg-image.png) no-repeat;
+        background-size: cover;
+        margin-bottom: -1px;
+    }
+    .imageAndTextBg .imageWrapper .image_1{
+        width: 100%;
+    }
+
+    .imageAndTextBg .leftImgOverlay {
+        top: 20%;
+        right: 0;
+    }
+    .imageAndTextBg .shapeCenter {
+        left: 82px;
+        width: 200px;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .imageAndTextBg .leftImage, .rightText{
+        width: 100%;
+    }
+    .imageAndTextBg .row {
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .imageAndTextBg .rightText {
+        order:2;
+        color: white;
+        }
+    
+    .imageAndTextBg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .imageAndTextBg .container {
+        border: 0px
+    }
+    
+    .imageAndTextBg .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .imageAndTextBg .colspace {
+   
+        row-gap: 80px;
+    }
+    
+    .imageAndTextBg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        align-items: center;
+        column-gap: 11.16%;
+        position: relative;
+    }
+    .imageAndTextBg h4 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .imageAndTextBg .rightText {
+        width: 100%;
+        order: 2;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .imageAndTextBg .leftImage {
+        width: 100%;
+        order: 1;
+        position: relative;
+    }
+
+    .imageAndTextBg .rightText h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .textAndImageSideBorder {
+        border: none;
+    }
+    .imageAndTextBg img.leftImgOverlay {
+        position: absolute;
+        top: 13%;
+        right: 0;
+        width: 240px;
+    }
+    .imageAndTextBg .shapeCenter {
+        left: 42px;
+    }
+}

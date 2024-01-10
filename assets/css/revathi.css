@@ -77,6 +77,9 @@ span{
 .teamContent .column {
     width: 22%;
 }
+.teamSlider img {
+    border-bottom: solid v;
+}
 .image-container {
     position: relative;
     display: inline-block;
@@ -148,6 +151,10 @@ span{
     display: block;
     object-fit: cover;
   }
+  .teamSlider .sideBorder {
+    border-left: 1px solid var(--secondary-color);
+    border-right: 1px solid var(--secondary-color);
+}
   .teamSlider .swiper-pagination-bullet
   {
     height: 10px;
@@ -221,83 +228,7 @@ span{
 
 /* text and image with bg */
 
-.textandimagebg .column {
-    width: 41%;
-}
-.textandimagebg  {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-.textandimagebg .colspace {
-   
-    justify-content: space-between;
-}
 
-.imageandtextbg  {
-    padding-top: 150px;
-    padding-bottom: 150px;
-}
-.textandimagebg.bg-image {
-    position: relative;
-    background: url(../img/Bg-image.png) no-repeat;
-    background-size: cover;
-    margin-bottom: -1px;
-}
-.left-content {
-    color: white;
-}
-.textandimagebg h4 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-.textandimagebg .shapeCenter {
-    left: 0px;
-    transform: translate(0%, -50%);
-    right: 0;
-    margin: auto;
-
-}
-.textandimagebg .rightImgOverlay {
-    position: absolute;
-    z-index: 0;
-    top: 50%;
-    right: 0;
-}
-
-/* image and text with bg */
-.imageandtextbg .row {
-    justify-content: space-between;
-}
-.imageandtextbg .column {
-    width: 40%;
-}
-.imageandtextbg.animation_section {
-    position: relative;
-    background: url(../img/Bg-2.png) no-repeat;
-    background-size: cover;
-    margin-bottom: -1px;
-}
- img.leftImgOverlay {
-    position: absolute;
-    top: 50%;
-    right: 0;
-}
-.imageandtextbg .shapeCenter {
-    left:25px;
-}
-.imageandtextbg .content{
-    color: #fff;
-}
-.imageandtextbg .title {
-    color: #fff;
-}
-.regular {
-    font-family: Manrope;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; 
-}
 
 /* Event Analysis Block image and text */
 .eventAnalysis .column {
@@ -322,10 +253,7 @@ span{
     border-right: 1px solid grey;
 }
 
-.teamSlider .sideBorder {
-    border-left: 1px solid var(--secondary-color);
-    border-right: 1px solid var(--secondary-color);
-}
+
 .content {
     padding-top: 40px;
     padding-bottom: 40px;

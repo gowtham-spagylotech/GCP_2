@@ -1,0 +1,232 @@
+/*Team Slider block */
+
+:root {
+    --swiper-navigation-size: 16px !important;
+}
+.teamSlider.container {
+    border: 1px solid;
+}
+.teamContent {
+    padding-top: 150px;
+}
+
+.teamContent h5 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-weight: 800;
+}
+
+.teamContent h4 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+
+
+.teamSlider .column {
+    /* width: 20% !important; */
+    /* width: 21.45% !important;
+    margin-left: 4.75% !important;
+    margin-right: 0 !important; */
+
+   
+}
+
+.teamSlider .margin_left{
+    margin-left: 0 !important;
+}
+
+.teamSlider .column img {
+    width: 100%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container .name {
+    visibility: hidden;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.image-container .name.title {
+    bottom: -50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.image-container:hover .name {
+    visibility: visible;
+}
+
+.teamSlider .swiper {
+    padding-bottom: 100px;
+    padding-left: 5.83%;
+}
+
+.teamBorder {
+    border-top: 1px solid var(--light-Blue);
+    border-bottom: 1px solid var(--light-Blue);
+}
+
+.teamSlider .overlay-color {
+    visibility: visible;
+    bottom: 0;
+    width: 100%;
+    padding-top:12px;
+    padding-bottom: 12px;
+    position: absolute;
+    background: var(--secondary-color);
+}
+
+.teamSlider .image-container:hover .overlay-color {
+    visibility: hidden;
+}
+
+.teamSlider .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+}
+
+.teamSlider .swiper-pagination-bullet-active {
+    height: 15px;
+    width: 15px;
+    background-color: var(--secondary-color);
+}
+
+.teamSlider .swiper-button-next,
+.teamSlider .swiper-button-prev {
+    font-weight: 900;
+    color: var(--secondary-color);
+    cursor: pointer;
+    position: absolute;
+    top: 100px;
+    width: 16px;
+}
+
+.teamSlider .swiper-button-next {
+    right: 44%;
+}
+
+.teamSlider .swiper-button-prev {
+    left: 44%;
+}
+
+.teamSlider .swiper-pagination {
+    color: var(--secondary-color);
+}
+
+.teamSlider .swiper-pagination span {
+    background-color: var(--secondary-color);
+    height: 15px;
+    width: 15px;
+}
+
+.teamSlider .swiper_navigation {
+    width: 100%;
+    margin-bottom: 16px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.teamSlider .swiper_navigation .pagination_wrapper {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .teamSlider .swiper-button-next {
+        right: 42%;
+    }
+
+    .teamSlider .swiper-button-prev {
+        left: 42%;
+    }
+}
+
+/* Media query for screens up to 991.98px width */
+@media only screen and (max-width: 991.98px) {
+
+    .teamSlider_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .teamSlider_wrapper .left_image {
+        width: 90%;
+    }
+
+    .teamSlider_wrapper .right_text {
+        width: 90%;
+    }
+
+    .teamSlider_wrapper {
+        margin: 150px 2% 150px 2%;
+        padding-bottom: 0px;
+    }
+
+    .teamSlider .swiper-button-next {
+        right: 40%;
+    }
+
+    .teamSlider .swiper-button-prev {
+        left: 40%;
+    }
+
+}
+
+
+@media (max-width: 767.98px) {
+    .teamSlider .swiper-button-next {
+        right: 38%;
+    }
+
+    .teamSlider .swiper-button-prev {
+        left: 38%;
+    }
+
+    /* .teamSlider .column {
+        width: 73.48% !important;
+        margin-left: 13.23% !important;
+        margin-right: 13.23% !important;
+    } */
+
+    .teamSlider .column img{
+        width: 100% !important;
+    }
+
+    .teamSlider .swiper {
+        padding-bottom: 100px;
+        padding-left: 0% !important;
+    }
+}
+
+@media (max-width: 577px) {
+    .teamSlider .swiper-button-next {
+        right: 30%;
+    }
+
+    .teamSlider .swiper-button-prev {
+        left: 30%;
+    }
+}

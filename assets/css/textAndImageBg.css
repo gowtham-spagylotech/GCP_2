@@ -1,0 +1,194 @@
+.textAndImageBg .leftText, .rightImage {
+    width: 41.75%;
+}
+.textAndImageBg  {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.textAndImageBg .colspace {
+   
+    justify-content: space-between;
+}
+
+
+.textAndImageBg.bg-image {
+    position: relative;
+    background: url(../img/Bg-image.png) no-repeat;
+    background-size: cover;
+    margin-bottom: -1px;
+}
+.textAndImageBg .leftText {
+    color: white;
+}
+.textAndImageBg h4 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.textAndImageBg .shapeCenter {
+    left: 0px;
+    transform: translate(0%, -50%);
+    right: 0;
+    margin: auto;
+    mix-blend-mode: overlay;
+
+}
+.textAndImageBg .rightImgOverlay {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    right: 0;
+}
+
+.fontWeight800 {
+    font-weight: 800;
+}
+
+.textAndImageBg {
+    padding-top: 190px;
+    padding-bottom: 150px;
+    align-items: center;
+    column-gap: 11.16%;
+    position: relative;
+}
+
+.textAndImageBg .desktopImage {
+    display: block;
+}
+
+.textandimage .tabImage {
+    display: none;
+}
+
+.textAndImageBg .leftText {
+    width: 40.1%;
+    padding-top: 63px;
+    padding-bottom: 63px;
+}
+
+.textandimage .rightImage {
+    width: 43.08%;
+    position: absolute; 
+    right: 0;
+}
+
+.textAndImageBg .rightImage .imageWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textAndImageBg .leftText {
+    margin-left: 5.83%;
+}
+
+.textAndImageSideBorder {
+    border-left: 1px solid var(--light-Blue);
+    border-right: 1px solid var(--light-Blue);
+}
+
+.textAndImageBg .leftText p {
+    text-transform: uppercase;
+}
+
+.textandimage .leftText h2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.textAndImageBg .imageWrapper .image_1 {
+    width: 376px;
+    /* position: absolute; */
+    /* z-index: -1; */
+}
+
+.textAndImageBg .imageWrapper .image_2 {
+    /* width: 100%; */
+    position: absolute;
+    mix-blend-mode: overlay;
+}
+
+/* Media query for screens up to 991.98px width */
+@media only screen and (max-width: 991.98px) {
+    
+    .textAndImageBg.bg-image {
+        position: relative;
+        background: url(../img/Bg-image.png) no-repeat;
+        background-size: cover;
+        margin-bottom: -1px;
+    }
+    .textAndImageBg .imageWrapper .image_1{
+        width: 100%;
+    }
+
+    .textAndImageBg .rightImgOverlay {
+        top: 16%;
+        right: 0;
+    }
+}
+
+
+
+@media (max-width: 767.98px) {
+    .textAndImageBg .leftText, .rightImage{
+        width: 100%;
+    }
+    .textAndImageBg .leftText {
+        order:2;
+        color: white;
+        }
+    
+    .textAndImageBg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .textAndImageBg .container {
+        border: 0px
+    }
+    
+    .textAndImageBg .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .textAndImageBg .colspace {
+   
+        row-gap: 80px;
+    }
+    
+    .textAndImageBg {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        align-items: center;
+        column-gap: 11.16%;
+        position: relative;
+    }
+    .textAndImageBg h4 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .textAndImageBg .leftText {
+        width: 100%;
+        order: 2;
+        margin-top: 40px;
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .textAndImageBg .rightImage {
+        width: 100%;
+        order: 1;
+        position: relative;
+    }
+
+    .textAndImageBg .leftText h2 {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .textAndImageSideBorder {
+        border: none;
+    }
+   
+}

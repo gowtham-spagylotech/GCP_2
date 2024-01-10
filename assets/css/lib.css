@@ -4,6 +4,7 @@
     --tertiary-color: #ffffff;
     --gray-color: #ededed;
     --light-Blue: #3b93ea;
+    --dark-Grey:rgba(0, 0, 0, 0.30);
     --font-size-12: 12px;
     --font-size-13: 13px;
     --font-size-14: 14px;
@@ -63,7 +64,7 @@
 }
 
 /* Font Weight 700 */
-.fontWeight800 {
+.fontWeight700 {
     font-weight: 700;
 }
 
