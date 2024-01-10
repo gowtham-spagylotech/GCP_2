@@ -1,4 +1,4 @@
-.textAndImageSection{
+.textAndImageSection {
     background-color: var(--tertiary-color);
 }
 
@@ -32,60 +32,51 @@
     bottom: 0;
 }
 
-/* Styling for highLight class */
-.highLight {
-    font-weight: 800;
-}
-
 /* Styling for adding bottom space */
 .bottomSpace {
     padding-bottom: 30px;
 }
 
 /* Styling for adding top space */
-.add_top_space {
-    padding-top: 30px;
-}
-
-/* Media query for screens up to 991.98px width */
-@media only screen and (max-width: 991.98px) {
-
-    /* Adjusting layout for smaller screens */
-    .textAndImageWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .textAndImageSection .leftText {
-        width: 48.38%;
-        margin: 150px 5.83% 12.5% 5.83%;
-    }
-
-    .textAndImageSection .leftText .title {
-        color: var(--secondary-color);
-    }
-
-    .textAndImageSection .rightImage {
-        width: 50.45%;
-    }
-
-    .textAndImageSection img {
-        position: relative;
-    }
+.textAndImageSection .topSpace {
+    margin-top: 33px;
 }
 
 /* Media query for screens up to 767.98px width */
 @media only screen and (max-width: 767.98px) {
 
+    .textAndImageSection .textAndImageWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 80px 0;
+    }
+
+    /* Styling for the container within textAndImageSection */
+    .textAndImageSection .container {
+        border: none;
+    }
+
     /* Further adjustments for smaller screens */
     .textAndImageSection .leftText {
-        width: 62.50%;
-        margin: 150px 9.11% 19.53% 9.11%;
+        width: 100%;
+        margin: 40px 0 0 0;
+        order: 2;
     }
 
     .textAndImageSection .rightImage {
-        width: 65.18%;
+        width: 100%;
+        order: 1;
     }
+
+    .textAndImageSection img {
+        position: relative;
+    }
+
+    /* Styling for adding top space */
+    .textAndImageSection .topSpace {
+        margin-top: 27px;
+    }
+
 }

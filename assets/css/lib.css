@@ -40,7 +40,7 @@
 
 /* Font Weight 200 */
 .fontWeight200 {
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 
 /* Font Weight 300 */
@@ -65,17 +65,21 @@
 
 /* Font Weight 700 */
 .fontWeight700 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 /* Font Weight 800 */
 .fontWeight800 {
-    font-weight: 800;
+    font-weight: 800 !important;
 }
 
 /* Font Weight 900 */
 .fontWeight900 {
     font-weight: 900;
+}
+
+.textUppercase{
+    text-transform: uppercase;
 }
 
 * {
@@ -429,7 +433,7 @@ h6 b {
 
     .mainTitle {
         font-size: var(--font-size-15);
-        line-height: var(--line-height-24-5);
+        line-height: var(--line-height-22-5);
     }
 
     .description {

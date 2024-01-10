@@ -1,6 +1,6 @@
 /* Adjusting container style in liveDataSection */
 .liveDataSection .container {
-    border-right: 1px solid black;
+    border-right: 1px solid var(--primary-color);
 }
 
 /* Styling title in liveDataSection */
@@ -70,11 +70,6 @@
 
 /* General styling for elements with class "general" */
 .lineHeading {
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     display: block;
     margin-top: 144px;
     margin-left: 22px;
@@ -123,27 +118,27 @@
 }
 
 /* Styling map_and_info and dataInfo */
-.map_and_info {
+.liveDataSection .map_and_info {
     display: flex;
 }
 
-.dataInfo {
+.liveDataSection .dataInfo {
     position: absolute;
     top: 42px;
     right: 6%;
 }
 
 /* Styling toolTip and toolTip text */
-.toolTip {
+.liveDataSection .toolTip {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
-.toolTip .toolTipText {
+.liveDataSection .toolTip .toolTipText {
     visibility: hidden;
     width: 270px;
-    background-color: #EDEDED;
+    background-color: var(--gray-color);
     text-align: center;
     border-radius: 6px;
     padding: 7.5px 15px;
@@ -152,16 +147,11 @@
     top: 100%;
     margin-top: 8px;
     margin-left: -60px;
-    color: #000;
-    font-family: 'Manrope', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+    color: var(--primary-color);
     transform: translate(-48%, 0%);
 }
 
-.toolTip .toolTipText::after {
+.liveDataSection .toolTip .toolTipText::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -173,13 +163,12 @@
     transform: rotate(180deg);
 }
 
-
-.toolTip:hover .toolTipText {
+.liveDataSection .toolTip:hover .toolTipText {
     visibility: visible;
 }
 
 /* Styling increaseAndDecrease section */
-.increaseAndDecrease {
+.liveDataSection .increaseAndDecrease {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -188,18 +177,18 @@
 }
 
 /* Styling increase and decrease buttons */
-.increaseAndDecrease .increaseButton {
-    background-color: #3754AB;
-    color: #ffff;
+.liveDataSection .increaseAndDecrease .increaseButton {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
 }
 
-.increaseAndDecrease .decreaseButton {
-    color: #3754AB;
-    background-color: #ffff;
+.liveDataSection .increaseAndDecrease .decreaseButton {
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
-.increaseAndDecrease .increaseButton,
-.increaseAndDecrease .decreaseButton {
+.liveDataSection .increaseAndDecrease .increaseButton,
+.liveDataSection .increaseAndDecrease .decreaseButton {
     width: 60px;
     height: 60px;
     font-size: 32px;
@@ -222,7 +211,7 @@
     }
 }
 
-@media only screen and (max-width: 991.98px) {
+@media only screen and (max-width: 767.98px) {
     .liveDataSection .title {
         padding-top: 100px;
     }
@@ -236,6 +225,13 @@
         margin-bottom: 30px;
     }
 
+    /* add bottom space */
+    .liveDataSection .title,
+    .liveDataSection h2 {
+        padding-bottom: 20px;
+    }
+
+
     .liveDataSection .liveDataMap {
         width: 100%;
     }
@@ -245,22 +241,20 @@
         align-items: center;
     }
 
-    .verticalLine {
+    .liveDataSection .verticalLine {
         order: 1;
         margin-top: 20px;
-        /* Adjust as needed */
         margin-bottom: 20px;
-        /* Adjust as needed */
     }
 
-    .verticalLine ul {
+    .liveDataSection .verticalLine ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        transform: translate(0,-8px);
+        transform: translate(0, -8px);
     }
 
-    .verticalLine ul li {
+    .liveDataSection .verticalLine ul li {
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -268,32 +262,32 @@
         align-items: center;
     }
 
-    .verticalLine ul li span {
+    .liveDataSection .verticalLine ul li span {
         padding-top: 10px;
     }
 
     /* Adjusting margin for the first and last list items */
-    .verticalLine ul li:first-child {
+    .liveDataSection .verticalLine ul li:first-child {
         margin-top: 0px;
     }
 
-    .verticalLine ul li:last-child {
+    .liveDataSection .verticalLine ul li:last-child {
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
 
     /* Styling the vertical line */
-    .lineAndMapWrapper .horizontalLine {
+    .liveDataSection .lineAndMapWrapper .horizontalLine {
         border-top: 1px solid var(--light-Blue);
         position: relative;
     }
 
     /* Styling the vertical line */
-    .lineAndMapWrapper .verticalLine {
+    .liveDataSection .lineAndMapWrapper .verticalLine {
         border: none;
     }
 
-    .lineHeading {
+    .liveDataSection .lineHeading {
         margin-top: 72px;
         margin-left: 0px;
         margin-bottom: 50px;

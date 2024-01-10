@@ -3,6 +3,7 @@
     position: relative;
     background: url(../img/animationBg.png) no-repeat;
     background-size: cover;
+    margin-bottom: -1px;
 }
 
 /* Set the background of the video section with a cover image and define its height */
@@ -29,10 +30,6 @@
     padding-bottom: 30px;
 }
 
-/* Styling for the heading within the video content */
-.videoSection .mainContent h5 {
-    font-weight: 800;
-}
 
 /* Style for the main content wrapper within the animation section */
 .animationSection .animationAndTextWrapper {
@@ -51,6 +48,7 @@
 /* Adjust margin for right content on larger screens within the animation section */
 .animationAndTextWrapper .rightContent {
     width: 40%;
+    margin-right: 5.83%;
 }
 
 /* Set styling for the image within the left content in the animation section */
@@ -73,12 +71,6 @@
     padding-bottom: 30px;
 }
 
-/* Adjust margin and styling for various elements within the right content in the animation section */
-.animationAndTextWrapper .rightContent .hightLight {
-    font-weight: 700;
-}
-
-
 @media (max-width: 1100.98px) {
 
     /* Style for the main content wrapper within the animation section */
@@ -95,6 +87,7 @@
     /* Adjust margin for right content on larger screens within the animation section */
     .animationAndTextWrapper .rightContent {
         width: 43.56%;
+        margin-right: 3.75%;
     }
 
     /* Set the background of the video section with a cover image and define its height */
@@ -116,6 +109,7 @@
     .animationAndTextWrapper .leftAnimation,
     .animationAndTextWrapper .rightContent {
         width: 100%;
+        margin-right: 0px;
     }
 
     .animationAndTextWrapper .leftAnimation {

@@ -1,40 +1,33 @@
 /* Adjusting container style in keyLiveDataMapSection */
-.keyLiveDataMapSection{
+.keyLiveDataMapSection {
     position: relative;
     background: url(../img/keyLiveDataBg.jpg) no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 
-.keyLiveDataMapSection .container{
+.keyLiveDataMapSection .container {
     padding-top: 150px;
     padding-left: 70px;
     padding-right: 70px;
-    
 }
-.lineAndMapWrapper{
-    justify-content: space-between;
-}
+
 .keyLineAndMapSection {
     background-color: var(--tertiary-color);
 }
-.lineAndMapContainer {    
-    padding-left:7.28%;
-    padding-right:7.28%;    
+
+.keyLineAndMapSection .lineAndMapContainer {
+    padding-left: 7.28%;
+    padding-right: 7.28%;
 }
 
 /* Styling the vertical line */
-.lineAndMapWrapper .verticalLine {
+.keyLineAndMapSection .lineAndMapWrapper .verticalLine {
     border-left: 1px solid var(--light-Blue);
     position: relative;
 }
 
 /* General styling for elements with class "general" */
-.lineHeading {
-    font-family: 'Manrope', sans-serif;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+.keyLineAndMapSection .lineHeading {
     display: block;
     margin-top: 144px;
     margin-left: 22px;
@@ -43,7 +36,7 @@
 }
 
 /* Styling the verticalLine unordered list */
-.verticalLine ul {
+.keyLineAndMapSection .verticalLine ul {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -61,16 +54,16 @@
 }
 
 /* Styling span within list items */
-.verticalLine ul li span {
+.keyLineAndMapSection .verticalLine ul li span {
     margin-left: 15px;
 }
 
 /* Adjusting margin for the first and last list items */
-.verticalLine ul li:first-child {
+.keyLineAndMapSection .verticalLine ul li:first-child {
     margin-top: 36px;
 }
 
-.verticalLine ul li:last-child {
+.keyLineAndMapSection .verticalLine ul li:last-child {
     margin-bottom: 148px;
     padding-bottom: 0px;
 }
@@ -83,42 +76,45 @@
 }
 
 .keyLiveData {
+    position: relative;
     width: 66.66%;
-    margin-top:60px;
+    margin-top: 60px;
     padding-bottom: 150px;
     margin-left: 16.66%;
     margin-right: 16.66%;
     color: var(--tertiary-color);
 }
 
-.keyLiveData .bottomSpace{
+.keyLiveData .bottomSpace {
     padding-bottom: 30px;
 }
 
-.keyLiveData .button{
+.keyLiveData .button {
     color: var(--tertiary-color);
-    border-color:var(--tertiary-color);;
+    border-color: var(--tertiary-color);
+    ;
 }
+
 /* Styling map_and_info and dataInfo */
-.map_and_info {
+.keyLiveData .map_and_info {
     display: flex;
 }
 
-.dataInfo {
+.keyLiveData .dataInfo {
     margin-left: 10%;
 }
 
 /* Styling toolTip and toolTip text */
-.toolTip {
+.keyLiveData .toolTip {
     position: relative;
     display: inline-block;
     cursor: pointer;
 }
 
-.toolTip .toolTipText {
+.keyLiveData .toolTip .toolTipText {
     visibility: hidden;
     width: 270px;
-    background-color: #EDEDED;
+    background-color: var(--gray-color);
     text-align: center;
     border-radius: 6px;
     padding: 7.5px 15px;
@@ -127,16 +123,11 @@
     top: 100%;
     margin-top: 8px;
     margin-left: -60px;
-    color: #000;
-    font-family: 'Manrope', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
+    color: var(--primary-color);
     transform: translate(-48%, 0%);
 }
 
-.toolTip .toolTipText::after {
+.keyLiveData .toolTip .toolTipText::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -149,12 +140,12 @@
 }
 
 
-.toolTip:hover .toolTipText {
+.keyLiveData .toolTip:hover .toolTipText {
     visibility: visible;
 }
 
 /* Styling increaseAndDecrease section */
-.increaseAndDecrease {
+.keyLineAndMapSection .increaseAndDecrease {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -162,37 +153,14 @@
     left: 50%;
 }
 
-/* Styling increase and decrease buttons */
-.increaseAndDecrease .increaseButton {
-    background-color: #3754AB;
-    color: #ffff;
-}
 
-.increaseAndDecrease .decreaseButton {
-    color: #3754AB;
-    background-color: #ffff;
-}
+@media only screen and (max-width: 767.98px) {
 
-.increaseAndDecrease .increaseButton,
-.increaseAndDecrease .decreaseButton {
-    width: 60px;
-    height: 60px;
-    font-size: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(0%, -52%);
-    cursor: pointer;
-}
-
-
-@media only screen and (max-width: 991.98px) {
-
-    .keyLiveDataMapSection .container{
-        padding-top: 150px;
+    .keyLiveDataMapSection .container {
+        padding-top: 80px;
         padding-left: 0px;
         padding-right: 0px;
-        
+
     }
 
     .keyLiveDataMapSection .title {
@@ -208,27 +176,25 @@
         width: 100%;
     }
 
-    .lineAndMapWrapper {
+    .keyLineAndMapSection .lineAndMapWrapper {
         flex-direction: column;
         align-items: center;
     }
 
-    .verticalLine {
+    .keyLineAndMapSection .verticalLine {
         order: 1;
         margin-top: 20px;
-        /* Adjust as needed */
         margin-bottom: 20px;
-        /* Adjust as needed */
     }
 
-    .verticalLine ul {
+    .keyLineAndMapSection .verticalLine ul {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        transform: translate(0,-8px);
+        transform: translate(0, -8px);
     }
 
-    .verticalLine ul li {
+    .keyLineAndMapSection .verticalLine ul li {
         width: 20%;
         display: flex;
         flex-direction: column;
@@ -236,32 +202,32 @@
         align-items: center;
     }
 
-    .verticalLine ul li span {
+    .keyLineAndMapSection .verticalLine ul li span {
         padding-top: 10px;
     }
 
     /* Adjusting margin for the first and last list items */
-    .verticalLine ul li:first-child {
+    .keyLineAndMapSection .verticalLine ul li:first-child {
         margin-top: 0px;
     }
 
-    .verticalLine ul li:last-child {
+    .keyLineAndMapSection .verticalLine ul li:last-child {
         margin-bottom: 0px;
         padding-bottom: 0px;
     }
 
     /* Styling the vertical line */
-    .lineAndMapWrapper .horizontalLine {
+    .keyLineAndMapSection .lineAndMapWrapper .horizontalLine {
         border-top: 1px solid var(--light-Blue);
         position: relative;
     }
 
     /* Styling the vertical line */
-    .lineAndMapWrapper .verticalLine {
+    .keyLineAndMapSection .lineAndMapWrapper .verticalLine {
         border: none;
     }
 
-    .lineHeading {
+    .keyLineAndMapSection .lineHeading {
         margin-top: 72px;
         margin-left: 0px;
         margin-bottom: 50px;
@@ -269,12 +235,12 @@
         color: var(--primary-color);
     }
 
-    .keyLiveData {
-        width: 80%;
-        margin-top:60px;
+    .keyLineAndMapSection  .keyLiveData {
+        width: 100%;
+        margin-top: 40px;
         padding-bottom: 150px;
-        margin-left: 10.66%;
-        margin-right: 10.66%;
+        margin-left: 0;
+        margin-right: 0;
         color: var(--tertiary-color);
     }
 

@@ -27,6 +27,123 @@
 
 <body>
 
+    <!-- Header start -->
+    <header>
+        <div class="navigation">
+            <div class="container">
+                <div class="showDesktop">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="assets/img/Logo.svg" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="navbar">
+                            <nav>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" title="About">About</a>
+                                    </li>
+                                    <li class="nav-item" id="dataResults">
+                                        <a href="#" class="nav-link" title="Data & Results">Data & Results</a>
+                                        <ul class="dropdownmenu">
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">Live Data</a>
+                                            </li>
+                                            <li class="dropdown-item">
+                                                <a href="#" class="dropdown-link">Event Analysis</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link text-decoration" title="Join Us">Join Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="searchbox">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                    fill="none">
+                                    <circle cx="10.1504" cy="10.1499" r="6.42707" transform="rotate(45 10.1504 10.1499)"
+                                        stroke="white" stroke-width="1.5" />
+                                    <line x1="15.0303" y1="14.4528" x2="20.772" y2="20.1945" stroke="white"
+                                        stroke-width="1.5" />
+                                </svg>
+                                <input placeholder="Search" type="text" name="search" class="searchInput" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hideDesktop">
+                    <div class="row">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="assets/img/Logo.svg" alt="logo" />
+                            </a>
+                        </div>
+                        <div class="hamburger" id="hamburger">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+                    <div class="navbar" id="navbar">
+                        <nav>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link" title="About">About</a>
+                                </li>
+                                <li class="nav-item" id="mobDataResults">
+                                    <a href="#" class="nav-link" title="Data & Results" onclick="toggleDropdown()">
+                                        Data & Results
+                                        <span class="dropdown-arrow"></span>
+                                    </a>
+                                    <ul class="mobDropdownmenu">
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">Live Data</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="#" class="dropdown-link">Event Analysis</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link text-decoration" title="Join Us">Join Us</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="searchbox">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"
+                                fill="none">
+                                <circle cx="10.1504" cy="10.1499" r="6.42707" transform="rotate(45 10.1504 10.1499)"
+                                    stroke="white" stroke-width="1.5" />
+                                <line x1="15.0303" y1="14.4528" x2="20.772" y2="20.1945" stroke="white"
+                                    stroke-width="1.5" />
+                            </svg>
+                            <input placeholder="Search" type="text" name="search" class="searchInput" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Hero Banner start -->
+    <section class="heroBanner">
+        <div class="bannerContent">
+            <div class="container">
+                <div class="heroDivision">
+                    <div class="textWrapper">
+                        <p class="title">ABOUT US</p>
+                        <h1>Our collective consciousness can change the physical world.</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Banner end -->
+
     <!-- Start of Animation and Text Section and Video Section-->
     <section>
         <!-- Animation Section with Container -->
@@ -56,7 +173,7 @@
                             “see” this incredible field—or understand the power our individual intentions, emotions, and
                             actions have on each other and the world.
                         </p>
-                        <!-- Highlighted Information -->
+                        <!-- fontWeight700 Information -->
                         <p class="mainTitle hightLight">
                             The Global Consciousness Project 2.0 is changing that by measuring the impact of shared
                             human experiences on global consciousness.
@@ -70,7 +187,7 @@
             <div class="container">
                 <div class="mainContent">
                     <!-- Subheading -->
-                    <h5 class="bottomSpace">THE RESEARCH</h5>
+                    <h5 class="bottomSpace fontWeight800">THE RESEARCH</h5>
                     <!-- Video Heading -->
                     <h2 class="bottomSpace">We're measuring what matters.</h2>
                     <!-- Video Description -->
@@ -95,15 +212,15 @@
                     <!-- Main Heading -->
                     <h2>Your help makes GCP 2.0 possible.</h2>
                     <!-- Subheading -->
-                    <h3 class="leftDescription">Whether you host a device, fund a cluster, or donate to our
-                        research, your support moves the mission forward.</h3>
+                    <h4 class="leftDescription">Whether you host a device, fund a cluster, or donate to our
+                        research, your support moves the mission forward.</h4>
                 </div>
                 <!-- Right Side Content -->
                 <div class="rightContent">
                     <!-- Apply Division for Citizen Scientists -->
                     <div class="applyDivision">
                         <!-- Subheading for Apply Division -->
-                        <h6>Become a Citizen Scientist</h6>
+                        <h3>Become a Citizen Scientist</h3>
                         <!-- Description for Apply Division -->
                         <p class="mainTitle">We couldn't do our work without the help of curious people
                             like you. Join our research team by hosting a RNG in your home.</p>
@@ -117,7 +234,7 @@
                         <!-- Content within Donation Division -->
                         <div class="content">
                             <!-- Subheading for Funding -->
-                            <h6>Fund the Research</h6>
+                            <h3>Fund the Research</h3>
                             <!-- Description for Funding -->
                             <p class="mainTitle">100% of your donations help us generate more data and
                                 get closer to understanding global interconnectivity—and how we can use it to create a
@@ -141,22 +258,21 @@
                 <!-- Left text content -->
                 <div class="leftText">
                     <p class="title bottomSpace"> HISTORY</p>
-                    <p class="main bottomSpace"> Founded in 1997 by Dr. Roger Nelson and a group of volunteers, the
-                        original Global Consciousness
-                        Project was developed by the donor-funded HeartMath Institue (HMI) and sought to detect,
-                        quantify,
+                    <p class="mainTitle bottomSpace">
+                        Founded in 1997 by Dr. Roger Nelson and a group of volunteers, the original Global Consciousness
+                        Project was developed by the donor-funded HeartMath Institue (HMI) and sought to
+                        detect,quantify,
                         and study human consciousness on a deeper level.
                     </p>
-                    <p class="main bottomSpace"> The team distributed physical random number generators on a global
-                        scale,
-                        and measured the impact
+                    <p class="mainTitle bottomSpace">
+                        The team distributed physical random number generators on a global scale,and measured the impact
                         that large-scale, synchronized human emotion and focus of attention had on the output.
                     </p>
-                    <h4> <span class="highLight"> Can we tip the scales </span> on a simple “heads or tails” coinflip
-                        to manipulate the
-                        outcome?
-
-                        Our hypothesis:<span class="highLight">yes.</span> </h4>
+                    <h4>
+                        <span class="fontWeight800"> Can we tip the scales </span> on a simple “heads or tails” coinflip
+                        to manipulate the outcome?
+                        <p class="topSpace"> Our hypothesis:<span class="fontWeight800">yes.</span> </p>
+                    </h4>
                 </div>
                 <!-- Right image content -->
                 <div class="rightImage">
@@ -173,7 +289,7 @@
         <div class="container">
             <!-- Header content -->
             <div class="headerContent">
-                <p class="title ">LIVE GCP 2.0 DATA</p>
+                <p class="title textUppercase">LIVE GCP 2.0 DATA</p>
                 <h2>Interconnectivity in action</h2>
                 <h4>Watch our active RNG's at work around the world.</h4>
             </div>
@@ -197,35 +313,35 @@
                                     fill="none">
                                     <circle cx="7.5" cy="7.5" r="7.5" fill="#FF3636" />
                                 </svg>
-                                <span>None</span>
+                                <span class="description">None</span>
                             </li>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                     fill="none">
                                     <circle cx="7.5" cy="7.5" r="7.5" fill="#FFF48F" />
                                 </svg>
-                                <span>Low</span>
+                                <span class="description">Low</span>
                             </li>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                     fill="none">
                                     <circle cx="7.5" cy="7.5" r="7.5" fill="#FFB800" />
                                 </svg>
-                                <span>Moderate</span>
+                                <span class="description">Moderate</span>
                             </li>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                     fill="none">
                                     <circle cx="7.5" cy="7.5" r="7.5" fill="#3B93EA" />
                                 </svg>
-                                <span> High </span>
+                                <span class="description"> High </span>
                             </li>
                             <li>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"
                                     fill="none">
                                     <circle cx="7.5" cy="7.5" r="7.5" fill="#3754AB" />
                                 </svg>
-                                <span> Very High </span>
+                                <span class="description"> Very High </span>
                             </li>
                         </ul>
                     </div>
@@ -361,7 +477,7 @@
                     <div class="leftText bottomSpace">
                         <p class="title bottomSpace">MAKE YOUR IMPACT</p>
                         <h2 class="bottomSpace">Help us drive global consciousness research forward.</h2>
-                        <p class="main">Inside the heart of every scientist is the desire to find meaning in their
+                        <p class="mainTitle">Inside the heart of every scientist is the desire to find meaning in their
                             world. We believe that desire exists in every one of us—we are all citizen scientists. No
                             matter how you participate in the Global Consciousness Project 2.0, you help drive this
                             breakthrough research.</p>
@@ -378,33 +494,33 @@
                 <div class="row">
                     <div class="gridBlock">
                         <h3 class="bottomSpace">Support GCP 2.0 Research</h3>
-                        <p class="bottomSpace">From funding our scientific research to distributing a wider range of
+                        <p class="mainTitle bottomSpace">From funding our scientific research to distributing a wider range of
                             RNG devices, 100%
                             of your contribution goes towards making this project possible.</p>
-                        <a>DONATE NOW ↗</a>
+                        <a class="hyperLink" href="#">DONATE NOW ↗</a>
                     </div>
                     <div class="gridBlock leftBorder">
                         <h3 class="bottomSpace">Fund a Device Cluster</h3>
-                        <p class="bottomSpace">Accelerate our reach and understanding of interconnectivity by funding a
+                        <p class="mainTitle bottomSpace">Accelerate our reach and understanding of interconnectivity by funding a
                             cluster of 20+ RNG devices to be distributed to citizen scientists in key areas around the
                             world.</p>
-                        <a class="hyperLink">FIND A CLUSTER ↗</a>
+                        <a class="hyperLink" href="#">FIND A CLUSTER ↗</a>
                     </div>
                 </div>
                 <div class="row">
                     <div class="gridBlock">
                         <h3 class="bottomSpace">Host a NextGen RNG</h3>
-                        <p class="bottomSpace">Be part of our network of global citizen scientists by hosting a random
+                        <p class="mainTitle bottomSpace">Be part of our network of global citizen scientists by hosting a random
                             number generator in your home. All you need is a stable internet connection and the desire
                             to make the world a better place.</p>
-                        <a class="hyperLink">apply now ↗</a>
+                        <a class="hyperLink" href="#">apply now ↗</a>
                     </div>
                     <div class="gridBlock leftBorder">
                         <h3 class="bottomSpace">Get Curious About Consciousness</h3>
-                        <p class="bottomSpace">The more we understand global consciousness, the more positive changes we
+                        <p class="mainTitle bottomSpace">The more we understand global consciousness, the more positive changes we
                             make. Explore the research, resources, and live data that are helping us “see” the unseen
                             forces that connect us.</p>
-                        <a class="hyperLink">discover the science ↗</a>
+                        <a class="hyperLink" href="#">discover the science ↗</a>
                     </div>
                 </div>
             </div>

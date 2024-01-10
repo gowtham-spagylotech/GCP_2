@@ -10,21 +10,27 @@
     border-left: 1px solid var(--tertiary-color);
     border-right: 1px solid var(--primary-color);
     color: var(--tertiary-color);
-    padding: 150px 5.83%;
+    padding: 150px 0%;
     column-gap: 8.33%;
 }
 
 /* Style for the left and right content columns */
 .contentSection .leftContent,
 .contentSection .rightContent {
-    width: 40%;
+    width: 45.83%;
 }
 
-/* Styling for the description in the left content */
-.contentSection .leftContent .leftDescription {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 300;
+/* Style for the left content columns */
+.contentSection .leftContent {
+    padding-left: 5.83%;
 }
+
+/* Style for the right content columns */
+.contentSection .rightContent {
+    padding-right: 5.83%;
+}
+
+
 
 /* Add padding to specific elements */
 .contentSection .leftContent h2,
@@ -34,9 +40,8 @@
 }
 
 /* Additional styling for certain heading elements */
-.contentSection .rightContent h6 {
+.contentSection .rightContent h3 {
     padding-bottom: 30px;
-    font-weight: 700;
 }
 
 /* Styling for links in the right content */
@@ -65,22 +70,41 @@
 }
 
 /* Media query for responsiveness on smaller screens */
-@media (max-width: 991.98px) {
-    
+@media (max-width: 767.98px) {
+
+    /* Style for the main content wrapper within the content section */
+    .contentSection .contentWrapper {
+        border: none;
+        padding: 80px 0%;
+        column-gap: 8.33%;
+    }
+
+    /* Add padding to specific elements */
+    .contentSection .leftContent h2,
+    .contentSection .rightContent h3,
+    .contentSection .rightContent .mainTitle {
+        padding-bottom: 20px;
+    }
+
+
     /* Adjust width for left and right content columns on smaller screens */
     .contentSection .leftContent,
     .contentSection .rightContent {
         width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     /* Remove right margin for left content on smaller screens */
     .contentSection .leftContent {
-        margin-bottom: 4.16%
+        margin-bottom: 40px
     }
 
-    /* Adjust margin for right content on smaller screens */
-    .contentSection .rightContent {
-        margin-top: 4.16%
+    /* Styling for specific divisions in the right content */
+    .rightContent .applyDivision,
+    .rightContent .donationDivision .content {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     /* Styling for horizontal lines in the right content */
@@ -88,6 +112,13 @@
     .contentSection .rightContent .donationDivision .line::before,
     .contentSection .rightContent::after {
         width: 100%;
+    }
+
+    /* Styling for horizontal lines in the right content */
+    .contentSection .rightContent::before,
+    .contentSection .rightContent .donationDivision .line::before,
+    .contentSection .rightContent::after {
+        width: 86.66%;
     }
 
 }

@@ -15,7 +15,6 @@
 .textAndImageWithFourGrid .textAndImageWrapper {
     padding-top: 106px;
     padding-bottom: 60px;
-    padding-left: 5.83%;
     column-gap: 12.5%;
 }
 
@@ -26,6 +25,7 @@
 .textAndImageWithFourGrid .textAndImageWrapper .leftText {
     width: 40%;
     color: var(--tertiary-color);
+    margin-left: 5.83%;
 }
 
 .textAndImageWithFourGrid .textAndImageWrapper .rightGraphicImage {
@@ -49,9 +49,10 @@
     border-bottom: 1px solid var(--secondary-color);
 }
 
-.leftBorder {
+.textAndImageWithFourGrid .leftBorder {
     border-left: 1px solid var(--secondary-color);
 }
+
 
 .fourGridBlock .gridBlock a {
     text-transform: uppercase;
@@ -61,17 +62,59 @@
 }
 
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
+
     .textAndImageWithFourGrid .textAndImageWrapper {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
     }
 
+    .textAndImageWithFourGrid .textAndImageWrapper {
+        padding-top: 80px;
+        padding-bottom: 80px;
+        column-gap: 12.5%;
+    }
+
+    /* grid Block css */
+    .textAndImageWithFourGrid .container {
+        border: none;
+    }
+
+    .textAndImageWithFourGrid .leftBorder {
+        border-left: none;
+    }
+
+    .textAndImageWithFourGrid .borderBottom {
+        border-bottom: 1px solid var(--secondary-color);
+    }
+
+    .fourGridBlock .gridBlock {
+        padding: 40px 0%;
+        width: 50%;
+        color: var(--tertiary-color);
+        border-top: 1px solid var(--secondary-color);
+    }
+
+    .textAndImageWithFourGrid .bottomSpace {
+        padding-bottom: 20px;
+    }
+
     .textAndImageWithFourGrid .textAndImageWrapper .leftText,
     .textAndImageWithFourGrid .textAndImageWrapper .rightGraphicImage {
-        width: 90%;
+        width: 100%;
     }
+
+    .textAndImageWithFourGrid .leftText {
+        order: 2;
+        margin-top: 40px;
+        margin-left: 0% !important;
+    }
+
+    .textAndImageWithFourGrid .rightGraphicImage {
+        order: 1;
+    }
+
 
     .fourGridBlock .gridBlock {
         width: 100%;

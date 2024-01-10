@@ -3,7 +3,8 @@
 }
 
 .imageAndTextSlider {
-    padding-bottom: 150px;
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
 .imageAndTextSlider .container {
@@ -13,7 +14,7 @@
 
 .imageAndTextSliderWrapper {
     column-gap: 6.66%;
-    margin: 150px 5.83% 0px 5.83%;
+    margin: 0px 5.83% 0px 5.83%;
     padding-bottom: 100px;
 }
 
@@ -59,22 +60,33 @@
 }
 
 .imageAndTextSlider .swiper-button-next {
-    right: 44%;
+    right: 40%;
+    z-index: 99;
 }
 
 
 .imageAndTextSlider .swiper-button-prev {
-    left: 44%;
+    left: 40%;
+    z-index: 99;
 }
 
 .imageAndTextSlider .swiper-pagination {
     color: var(--secondary-color);
 }
 
-.imageAndTextSlider .swiper-pagination span {
+
+
+.imageAndTextSlider .swiper-pagination .swiper-pagination-bullet-active {
     background-color: var(--secondary-color);
-    height: 15px;
-    width: 15px;
+    height: 15px !important;
+    width: 15px !important;
+}
+
+.imageAndTextSlider .swiper-pagination .swiper-pagination-bullet {
+    height: 10px;
+    width: 10px;
+    margin-left: 25px !important;
+    margin-right: 25px !important;
 }
 
 .imageAndTextSlider .swiperNavigation {
@@ -87,58 +99,12 @@
 
 .swiperNavigation .paginationWrapper {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
+    padding-top: 35px;
     text-align: center;
-    width: 30%;
+    width: 50%;
 }
 
 @media only screen and (max-width: 1200px) {
-    .imageAndTextSlider .swiper-button-next {
-        right: 42%;
-    }
-
-    .imageAndTextSlider .swiper-button-prev {
-        left: 42%;
-    }
-}
-
-/* Media query for screens up to 991.98px width */
-@media only screen and (max-width: 991.98px) {
-
-    .imageAndTextSliderWrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .imageAndTextSliderWrapper .left_image {
-        width: 90%;
-    }
-
-    .imageAndTextSliderWrapper .rightText {
-        width: 90%;
-    }
-
-    .imageAndTextSliderWrapper {
-        margin: 150px 2% 150px 2%;
-        padding-bottom: 0px;
-    }
-
-    .imageAndTextSlider .swiper-button-next {
-        right: 40%;
-    }
-
-    .imageAndTextSlider .swiper-button-prev {
-        left: 40%;
-    }
-
-}
-
-@media (max-width: 767.98px) {
     .imageAndTextSlider .swiper-button-next {
         right: 38%;
     }
@@ -148,12 +114,87 @@
     }
 }
 
-@media (max-width: 577px) {
+/* Media query for screens up to 991.98px width */
+@media only screen and (max-width: 991.98px) {
     .imageAndTextSlider .swiper-button-next {
-        right: 35%;
+        right: 36%;
     }
 
     .imageAndTextSlider .swiper-button-prev {
-        left: 35%;
+        left: 36%;
+    }
+
+}
+
+@media (max-width: 767.98px) {
+
+    :root {
+        --swiper-navigation-size: 14px !important;
+    }
+
+    .imageAndTextSliderWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imageAndTextSlider .container {
+        border: none;
+    }
+
+    .imageAndTextSliderWrapper .left_image {
+        width: 100%;
+    }
+
+    .imageAndTextSliderWrapper .rightText {
+        width: 100%;
+    }
+
+    .imageAndTextSlider {
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+
+    .imageAndTextSliderWrapper {
+        column-gap: 6.66%;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+
+    .imageAndTextSlider .swiper-button-next {
+        right: 30%;
+    }
+
+    .imageAndTextSlider .swiper-button-prev {
+        left: 30%;
+    }
+
+    .imageAndTextSlider .swiper-pagination .swiper-pagination-bullet-active {
+        height: 12px !important;
+        width: 12px !important;
+    }
+
+    .imageAndTextSlider .swiper-pagination .swiper-pagination-bullet {
+        height: 8px;
+        width: 8px;
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    .imageAndTextSliderWrapper .rightText .bottomSpace {
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 577px) {
+    .imageAndTextSlider .swiper-button-next {
+        right: 24%;
+
+    }
+
+    .imageAndTextSlider .swiper-button-prev {
+        left: 24%;
     }
 }
