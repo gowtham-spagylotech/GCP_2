@@ -216,9 +216,15 @@
         padding-top: 100px;
     }
 
+    /* Adjusting container style in liveDataSection */
+    .liveDataSection .container {
+        border: none;
+    }
+
+
     .liveDataSection .headerContent {
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .lineAndMapSection {

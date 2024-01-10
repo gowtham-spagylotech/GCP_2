@@ -5,7 +5,15 @@
     background-repeat: no-repeat;
 }
 
-.hero_division {
+.herotwoBanner {
+    position: relative;
+    background: url(../img/handburgerBg.png) no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.heroDivision {
     /* max-width: 66.66%; */
     /* margin-left: 5.83%;
     margin-right: 27.41%; */
@@ -16,7 +24,7 @@
     position: relative;
 }
 
-.hero_division .title {
+.heroDivision .title {
     color: var(--tertiary-color);
     padding-bottom: 30px;
 }
@@ -35,12 +43,12 @@
     border-right: 4px solid var(--tertiary-color);
 }
 
-.hero_division::after{
+.heroDivision::after {
     content: '';
     position: absolute;
-    top: 30%;
+    top: 0%;
     right: 1px;
-    height: 70%;
+    height: 100%;
     border-right: 2px solid var(--primary-color);
 }
 
@@ -71,8 +79,16 @@
     margin-left: 40px;
 }
 
+.showData {
+    display: block;
+}
+
+.hideData {
+    display: none;
+}
+
 @media (max-width: 991.98px) {
-    .hero_division {
+    .heroDivision {
         max-width: 100% !important;
     }
 

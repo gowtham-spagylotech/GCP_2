@@ -2,14 +2,11 @@
     --swiper-navigation-size: 16px !important;
 }
 
-.imageAndTextSlider {
-    margin-top: 150px;
-    margin-bottom: 150px;
-}
-
 .imageAndTextSlider .container {
     border-left: 1px solid var(--secondary-color);
     border-right: 1px solid var(--primary-color);
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .imageAndTextSliderWrapper {
@@ -141,6 +138,8 @@
 
     .imageAndTextSlider .container {
         border: none;
+        padding-top: 80px;
+        padding-bottom: 80px;
     }
 
     .imageAndTextSliderWrapper .left_image {
@@ -151,10 +150,7 @@
         width: 100%;
     }
 
-    .imageAndTextSlider {
-        margin-top: 80px;
-        margin-bottom: 80px;
-    }
+    
 
 
     .imageAndTextSliderWrapper {
@@ -185,6 +181,10 @@
 
     .imageAndTextSliderWrapper .rightText .bottomSpace {
         padding-bottom: 20px;
+    }
+
+    .imageAndTextSlider .swiperNavigation {
+        margin-bottom: 8px;
     }
 }
 
