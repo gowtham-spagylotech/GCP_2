@@ -34,7 +34,7 @@
     padding-bottom: 8.7%;
 }
 
-.sideBorder {
+.teamListBlock.sideBorder {
     border-left: 1px solid var( --light-Blue);
     border-right: 1px solid rgba(0, 0, 0, 0.30);
 }

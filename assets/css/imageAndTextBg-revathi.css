@@ -18,11 +18,11 @@
 }
  .imageAndTextBg img.leftImgOverlay {
     position: absolute;
-    top: 50%;
+    top: 25%;
     right: 0;
 }
 .imageAndTextBg .shapeCenter {
-    left:20px;
+    left:188px;
 }
 .imageAndTextBg .rightText{
     color: #fff;
@@ -53,13 +53,13 @@
     .imageAndTextBg .imageWrapper .image-1{
         width: 100%;
     }
-
-    .imageAndTextBg .leftImgOverlay {
+    .imageAndTextBg img.leftImgOverlay {
+        position: absolute;
         top: 20%;
         right: 0;
     }
     .imageAndTextBg .shapeCenter {
-        left: 5px;
+        left: 83px;
         width: 200px;
     }
 }
@@ -133,11 +133,11 @@
     }
     .imageAndTextBg img.leftImgOverlay {
         position: absolute;
-        top: 50%;
+        top: 11%;
         right: 0;
         width: 240px;
     }
     .imageAndTextBg .shapeCenter {
-        left: 0px;
+        left: 42px;
     }
 }

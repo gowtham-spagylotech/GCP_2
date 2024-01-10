@@ -3,34 +3,38 @@
     font-weight: 800;
 }
 
-.imageAndText {
+.imageAndText-EventAnalysis {
     padding-top: 190px;
     padding-bottom: 150px;
     align-items: center;
     column-gap: 11.16%;
     position: relative;
 }
-
-.imageAndText .desktopImage {
+.imageAndText-EventAnalysis .rowspace{
+    padding-top: 100px;
+}
+.imageAndText-EventAnalysis .desktopImage {
     display: block;
 }
 
-.imageAndText .tabImage {
+.imageAndText-EventAnalysis .tabImage {
     display: none;
 }
 
-.imageAndText .leftImage {
+.imageAndText-EventAnalysis .leftImage {
     width: 41.75%;
 }
 
-.imageAndText .rightText {
-    width: 40.08%;
+.imageAndText-EventAnalysis .rightText {
+    width: 41.75%;
     position: absolute; 
     right: 0;
     margin-right: 5.8%;
+    padding-top: 40.5px;
+    padding-bottom: 40.5px;
 }
 
-.imageAndText .leftImage .imageWrapper {
+.imageAndText-EventAnalysis .leftImage .imageWrapper {
     position: relative;
     display: flex;
     justify-content: center;
@@ -38,34 +42,27 @@
 }
 
 
-.imageAndTextSideBorder {
-    border-left: 1px solid var(--light-Blue);
+.imageAndText-EventAnalysis .sideBorder {
     border-right: 1px solid var(--light-Blue);
 }
 
-.imageAndText .rightText .title {
+.imageAndText-EventAnalysis .rightText .title {
     color: var(--secondary-color);
     text-transform: uppercase;
 }
 
-.imageAndText .rightText h4 {
+.imageAndText-EventAnalysis .rightText h4 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.imageAndText .imageWrapper .image_1 {
-    width: 376px;
-    /* position: absolute; */
-    /* z-index: -1; */
+.imageAndText-EventAnalysis .imageWrapper .image_1 {
+    width: 100%
 }
 
-/* .imageAndText .imageWrapper .image_2 {
-    width: 100%; 
-    position: absolute;
-    mix-blend-mode: overlay;
-} */
 
-.imageAndText .shapeCenter {
+
+.imageAndText-EventAnalysis .shapeCenter {
     left: 0px;
     transform: translate(0%, -50%);
     right: 0;
@@ -73,7 +70,7 @@
     mix-blend-mode: overlay;
 
 }
-.imageAndText .leftImgOverlay {
+.imageAndText-EventAnalysis .leftImgOverlay {
     position: absolute;
     z-index: 0;
     top: 50%;
@@ -84,35 +81,39 @@
 
 /* Media query for screens up to 991.98px width */
 @media only screen and (max-width: 991.98px) {
-    .imageAndText .leftImage {
+    .imageAndText-EventAnalysis .leftImage {
         width: 43.56%;
         padding-left: 4.45%;
     }
 
-    .imageAndText .rightText {
+    .imageAndText-EventAnalysis .image_1 {
+        width: 300px;
+    }
+
+    .imageAndText-EventAnalysis .rightText {
         width: 41.08%;
         /* right: -13px; */
     }
-    .imageAndText .rightText h4 {
+    .imageAndText-EventAnalysis .rightText h4 {
         padding-top: 20px;
         padding-bottom: 2   0px;
     }
 
-    .imageAndText {
+    .imageAndText-EventAnalysis {
         column-gap: 12.17%;
     } 
-    .imageAndText .imageWrapper .image_1 {
+    .imageAndText-EventAnalysis .imageWrapper .image_1 {
         width: 240px;
         /* position: absolute; */
         /* z-index: -1; */
     }
 
-    .imageAndText .leftImgOverlay {
+    .imageAndText-EventAnalysis .leftImgOverlay {
         width: 100%;
         opacity: 0.76;
     }
 
-.imageAndText .imageWrapper .image_2 {
+.imageAndText-EventAnalysis .imageWrapper .image_2 {
     width: 100%;
     position: absolute;
   
@@ -121,17 +122,21 @@
 }
 
 @media (max-width: 767.98px) {
-    .imageAndText .container {
+
+
+    .imageAndText-EventAnalysis .container {
         border: 0px
     }
     
-    .imageAndText .row {
+    .imageAndText-EventAnalysis .row {
         display: flex;
         flex-direction: column;
     }
-    
+    .imageAndText-EventAnalysis .image_1 {
+        width: 330px;
+    }
 
-    .imageAndText {
+    .imageAndText-EventAnalysis {
         padding-top: 80px;
         padding-bottom: 80px;
         align-items: center;
@@ -139,7 +144,7 @@
         position: relative;
     }
 
-    .imageAndText .leftImage {
+    .imageAndText-EventAnalysis .leftImage {
         width: 100%;
         order: 1;
         margin-top: 40px;
@@ -147,14 +152,14 @@
         padding: 0;
     }
 
-    .imageAndText .rightText {
+    .imageAndText-EventAnalysis .rightText {
         width: 100%;
         order: 2;
         position: relative;
         padding-top: 80px;
     }
 
-    .imageAndText .leftImage h2 {
+    .imageAndText-EventAnalysis.leftImage h2 {
         padding-top: 20px;
         padding-bottom: 20px;
     }
@@ -162,10 +167,10 @@
     .imageAndTextSideBorder {
         border: none;
     }
-    .imageAndText .imageWrapper .image_1 {
+    .imageAndText-EventAnalysis .imageWrapper .image_1 {
         width: 74%;
      }
-     .imageAndText .leftImgOverlay {
+     .imageAndText-EventAnalysis .leftImgOverlay {
         width: 93.4%;
         opacity: 0.76;
      }
