@@ -16,10 +16,10 @@
     padding-top: 150px;
 }
 
-.teamContent h5 {
+.teamContent .title {
     color: var(--secondary-color);
     text-align: center;
-    font-weight: 800;
+
 }
 
 .teamContent h4 {
@@ -103,7 +103,7 @@
     width: 10px;
 }
 
-.teamSlider .swiper-pagination-bullet-active {
+.teamSlider .swiper-pagination-bullet .swiper-pagination-bullet-active{
     height: 15px;
     width: 15px;
     background-color: var(--secondary-color);
@@ -131,11 +131,7 @@
     color: var(--secondary-color);
 }
 
-.teamSlider .swiper-pagination span {
-    background-color: var(--secondary-color);
-    height: 15px;
-    width: 15px;
-}
+
 
 
 
@@ -186,11 +182,11 @@
         align-items: center;
     }
 
-    .teamSlider_wrapper .left_image {
+    .teamSlider_wrapper .column {
         width: 90%;
     }
 
-    .teamSlider_wrapper .right_text {
+    .teamSlider_wrapper .column {
         width: 90%;
     }
 

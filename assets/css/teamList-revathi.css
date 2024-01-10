@@ -77,7 +77,7 @@ img.teamList-image {
     display: block;
 }
 
-.overlay-color {
+.teamListBlock .overlay-color {
     visibility: visible;
     /* padding: 0.869% 8.334%; */
     padding: 12px 120px;
