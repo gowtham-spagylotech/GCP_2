@@ -3,7 +3,7 @@
     font-weight: 800;
 }
 
-.textandimage {
+.textAndImage {
     padding-top: 17.03%;
     padding-bottom: 17.1%;
     align-items: center;
@@ -11,33 +11,33 @@
     position: relative;
 }
 
-.textandimage .desktopImage {
+.textAndImage .desktopImage {
     display: block;
 }
 
-.textandimage .tabImage {
+.textAndImage .tabImage {
     display: none;
 }
 
-.textandimage .leftText {
+.textAndImage .leftText {
     width: 40.1%;
 }
 
-.textandimage .rightImage {
+.textAndImage .rightImage {
     width: 43.08%;
     position: absolute; 
     right: 0;
 }
 
-.textandimage .rightImage .imageWrapper {
+.textAndImage .rightImage .imageWrapper {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.textandimage .leftText {
-    margin-left: 5.83%;
+.textAndImage .leftText {
+    padding-left: 5.83%;
 }
 
 .textAndImageSideBorder {
@@ -45,12 +45,12 @@
     border-right: 1px solid var(--dark-Grey);
 }
 
-.textandimage .leftText p {
+.textAndImage .leftText p {
     color: var(--secondary-color);
     text-transform: uppercase;
 }
 
-.textandimage .leftText h2 {
+.textAndImage .leftText h2 {
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -63,23 +63,23 @@
 }
 
 .imageWrapper .image_2 {
-    /* width: 100%; */
+     width: 100%; 
     position: absolute;
     mix-blend-mode: overlay;
 }
 
 @media (max-width: 1100.98px) {
-    .textandimage .leftText {
+    .textAndImage .leftText {
         width: 43.56%;
         padding-left: 4.45%;
     }
 
-    .textandimage .rightImage {
+    .textAndImage .rightImage {
         width: 41.08%;
         /* right: -13px; */
     }
 
-    .textandimage {
+    .textAndImage {
         column-gap: 12.17%;
     } 
 
@@ -92,7 +92,7 @@
     position: absolute;
   
 }
-.textandimagebg.bg-image {
+.textAndImagebg.bg-image {
     position: relative;
     background: url(../img/Bg-image.png) no-repeat;
     background-size: cover;
