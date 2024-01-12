@@ -1,0 +1,147 @@
+/* Team List Block */
+.researchTeamBlock .column{
+    width: 21.43%;
+}
+.researchTeamBlock .column img {
+    width: 100%;
+}
+.researchTeamBlock .image-container .name {
+    visibility: hidden;
+    width: 100%;
+    text-align: left;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+    padding-top: 12px;
+    padding-bottom: 0px;
+    padding-left: 18px;
+    border-radius: 2px;
+}
+
+.researchTeamBlock .image-container .name.title {
+    padding-top: 5px;
+    padding-bottom: 12px;
+    bottom: -52px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.researchTeamBlock .image-container:hover .name {
+    visibility: visible;
+}
+
+.researchTeamBlock {
+    padding-top: 10.43%;
+    padding-bottom: 8.7%;
+}
+
+.researchTeamBlock .sideBorder {
+    border-left: 1px solid var( --light-Blue);
+    border-right: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.researchTeamBlock .topBorder {
+    border-top: 1px solid var(--light-Blue);
+    border-bottom: 1px solid var(--light-Blue);
+}
+
+.researchTeamBlock .space {
+    column-gap: 4.75%;
+    width: 100%;
+    padding-left: 5.75%;
+}
+
+.researchTeamBlock p.center  {
+    color: var(--secondary-color);
+    text-align: center;  
+}
+
+.researchTeamBlock h4 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-top: 2.54%;
+    padding-bottom: 5.01%;
+}
+
+.researchTeamBlock h3 {
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 2.42%;
+}
+.researchTeamBlock .rowspace {
+    margin-top: 125px;
+    /* margin-bottom: 125px; */
+}
+
+.researchTeamBlock img.teamList-image {
+    display: block;
+}
+
+.researchTeamBlock .overlay-color {
+    visibility: visible;
+    /* padding: 0.869% 8.334%; */
+    padding: 0.84% 8.39%;
+    position: absolute;
+    background: var(--secondary-color);
+}
+
+.researchTeamBlock .image-container:hover .overlay-color {
+    visibility: hidden;
+}
+
+
+/* Media query for screens up to 991.98px width */
+@media only screen and (max-width: 991.98px) {
+    /* .researchTeamBlock .space {
+        justify-content: center;
+        row-gap: 50px;
+    } */
+    .researchTeamBlock .overlay-color {
+        padding: 0.84% 8.9%;
+    }
+} 
+
+@media (max-width: 767.98px) {
+
+    .researchTeamBlock .column{
+        width: 100%;
+    }
+    .researchTeamBlock .column img {
+        width: 100%;
+    }
+    .researchTeamBlock {
+        padding-top: 120px;
+    }
+    .researchTeamBlock .space {
+        padding-left: 0px;
+        row-gap: 120px;
+    }
+    .researchTeamBlock .sideBorder {
+        border: 0px;
+    }
+    .researchTeamBlock .overlay-color {
+        padding: 3.2% 43.35%;
+    }
+    
+    .researchTeamBlock .image-container .name {
+        visibility: visible;
+    }
+    .researchTeamBlock h4 {
+        padding-top: 4.66%;
+        padding-bottom: 9.5%;
+    }
+    .researchTeamBlock h3 {
+        padding-bottom: 4.7%;
+    }
+    .researchTeamBlock h5 {
+     font-weight: 700;
+    }
+    .researchTeamBlock .title {
+        font-size: 16px;
+        line-height: var(--line-height-20);
+    }
+}
