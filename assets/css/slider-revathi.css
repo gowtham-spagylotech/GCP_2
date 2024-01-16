@@ -57,6 +57,7 @@
     color: #fff;
     padding: 5px;
     border-radius: 2px;
+    
 }
 
 .image-container .name.title {
@@ -81,15 +82,7 @@
     border-bottom: 1px solid var(--light-Blue);
 }
 
-.teamSlider .overlay-color {
-    visibility: visible;
-    bottom: 0;
-    width: 100%;
-    padding-top:12px;
-    padding-bottom: 12px;
-    position: absolute;
-    background: var(--secondary-color);
-}
+
 
 .teamSlider .image-container:hover .overlay-color {
     visibility: hidden;
@@ -219,6 +212,9 @@
     .teamSlider .swiper-button-prev {
         left: 30%;
     }
+    .teamSlider .image-container .name {
+        visibility: visible;
+    }
 
 }
 
@@ -271,6 +267,9 @@
     .teamSlider .swiper {
         padding-bottom: 100px;
         padding-left: 0% !important;
+    }
+    .teamSlider .image-container .name {
+        visibility: visible;
     }
 }
 

@@ -89,6 +89,7 @@
     background: var(--secondary-color);
     width: 100%;
     height: 24.9px;
+    transition: 5s ease;
 }
 
 .teamListBlock .image-container:hover .overlay-color {

@@ -16,6 +16,7 @@
 }
 .imageAndTextBg .image-1 {
     mix-blend-mode: overlay;
+    width: 100%;
 }
 .imageAndTextBg.animation_section {
     position: relative;
@@ -27,6 +28,7 @@
     position: absolute;
     top: 25%;
     right: 0;
+    width: 26%;
 }
 .imageAndTextBg .shapeCenter {
     left:13.1%;
