@@ -45,22 +45,22 @@
 
 /* Font Weight 300 */
 .fontWeight300 {
-    font-weight: 400;
+    font-weight: 300 !important;
 }
 
 /* Font Weight 400 */
 .fontWeight400 {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 
 /* Font Weight 500 */
 .fontWeight500 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 /* Font Weight 600 */
 .fontWeight600 {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 /* Font Weight 700 */
@@ -75,7 +75,7 @@
 
 /* Font Weight 900 */
 .fontWeight900 {
-    font-weight: 900;
+    font-weight: 900 !important;
 }
 
 .textUppercase{
