@@ -1,28 +1,22 @@
-.textAndImageBg .leftText, .rightImage {
+.textAndImageBg .leftText {
     width: 41.75%;
 }
 .textAndImageBg  {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 14.75%;
+    padding-bottom: 14.75%;
 }
 .textAndImageBg .colspace {
-   
-    justify-content: space-between;
+  column-gap: 6.67%;
 }
-
-
 .textAndImageBg.bg-image {
     position: relative;
     background: url(../img/Bg-image.png) no-repeat;
     background-size: cover;
     margin-bottom: -1px;
 }
-.textAndImageBg .leftText {
-    color: white;
-}
 .textAndImageBg h4 {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 7.5%;
+    padding-bottom: 7.5%;
 }
 .textAndImageBg .shapeCenter {
     left: 0px;
@@ -43,31 +37,24 @@
     font-weight: 800;
 }
 
-.textAndImageBg {
-    padding-top: 190px;
-    padding-bottom: 150px;
-    align-items: center;
-    column-gap: 11.16%;
-    position: relative;
-}
-
 .textAndImageBg .desktopImage {
     display: block;
 }
 
-.textandimage .tabImage {
+.textAndImageBg .tabImage {
     display: none;
 }
 
 .textAndImageBg .leftText {
-    width: 40.1%;
-    padding-top: 63px;
-    padding-bottom: 63px;
+    width: 40%;
+    padding-top: 5.3%;
+    padding-bottom: 5.3%;
+    padding-left: 5.9%;
+    color: white;
 }
 
-.textandimage .rightImage {
-    width: 43.08%;
-    position: absolute; 
+.textAndImageBg .rightImage {
+    width: 41.75%;
     right: 0;
 }
 
@@ -78,29 +65,15 @@
     align-items: center;
 }
 
-.textAndImageBg .leftText {
-    margin-left: 5.83%;
-}
-
 .textAndImageSideBorder {
     border-left: 1px solid var(--light-Blue);
     border-right: 1px solid var(--light-Blue);
 }
-
 .textAndImageBg .leftText p {
     text-transform: uppercase;
 }
-
-.textandimage .leftText h2 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-
 .textAndImageBg .imageWrapper .image_1 {
-    width: 376px;
-    /* position: absolute; */
-    /* z-index: -1; */
+    width: 100%;
 }
 
 .textAndImageBg .imageWrapper .image_2 {
@@ -153,10 +126,13 @@
         flex-direction: column;
     }
     .textAndImageBg .colspace {
-   
         row-gap: 80px;
     }
     
+    .textAndImageBg .imageWrapper .image_2 {
+        width: 100%; 
+  
+    }
     .textAndImageBg {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -180,6 +156,10 @@
         width: 100%;
         order: 1;
         position: relative;
+    }
+    .textAndImageBg .rightImgOverlay {
+        top: 27%;
+        right: 0;
     }
 
     .textAndImageBg .leftText h2 {

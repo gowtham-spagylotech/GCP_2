@@ -2,15 +2,9 @@
 
 :root {
     --swiper-navigation-size: 16px !important;
-    --swiper-navigation-size-14: 14px !important;
 }
-
-.teamSlider .container {
-    border-left: 1px solid;
-}
-.teamSlider .sideBorder {
-    border-left: 1px solid var(--light-Blue);
-    border-right: 1px solid var(--dark-Grey);
+.teamSlider.container {
+    border: 1px solid;
 }
 .teamContent {
     padding-top: 150px;
@@ -19,7 +13,7 @@
 .teamContent .title {
     color: var(--secondary-color);
     text-align: center;
-
+    /* font-weight: 800; */
 }
 
 .teamContent h4 {
@@ -29,11 +23,14 @@
     padding-bottom: 60px;
 }
 
+
 .teamSlider .column {
     /* width: 20% !important; */
-    width: 21.45% !important;
+    /* width: 21.45% !important;
     margin-left: 4.75% !important;
-    margin-right: 0 !important;
+    margin-right: 0 !important; */
+
+   
 }
 
 .teamSlider .margin_left{
@@ -76,12 +73,12 @@
 
 .teamSlider .swiper {
     padding-bottom: 100px;
-    padding-left: 5.84%;
+    padding-left: 5.83%;
 }
 
-.teamSlider .topBorder {
+.teamBorder {
     border-top: 1px solid var(--light-Blue);
-    /* border-bottom: 1px solid var(--light-Blue); */
+    border-bottom: 1px solid var(--light-Blue);
 }
 
 .teamSlider .overlay-color {
@@ -98,14 +95,18 @@
     visibility: hidden;
 }
 
-.teamSlider .swiper-pagination-bullet {
+.teamSlider .swiper-pagination .swiper-pagination-bullet{
     height: 10px;
     width: 10px;
+    /* margin-left: 25px !important; */
+    margin-right: 25px !important;
 }
 
-.teamSlider .swiper-pagination-bullet .swiper-pagination-bullet-active{
-    height: 15px;
+.teamSlider .swiper-pagination .swiper-pagination-bullet-active  {
+    height: 15px; 
     width: 15px;
+    /* margin-left: 25px !important; */
+    margin-right: 25px !important;
     background-color: var(--secondary-color);
 }
 
@@ -120,24 +121,28 @@
 }
 
 .teamSlider .swiper-button-next {
-    right: 44%;
+    right: 40%;
+    z-index: 99;
 }
 
 .teamSlider .swiper-button-prev {
-    left: 44%;
+    left: 40%;
+    z-index: 99;
 }
 
 .teamSlider .swiper-pagination {
     color: var(--secondary-color);
 }
 
-
-
-
+.teamSlider .swiper-pagination span {
+    background-color: var(--secondary-color);
+    height: 15px;
+    width: 15px;
+}
 
 .teamSlider .swiper_navigation {
     width: 100%;
-    height: 16px;
+    margin-bottom: 16px;
     position: relative;
     align-items: center;
     justify-content: center;
@@ -151,15 +156,6 @@
     padding: 20px;
     text-align: center;
     width: 30%;
-}
-.teamSlider {
-    position: relative;
-}
-.teamSlider .bottomBorder{
-    position: absolute;
-    top: 81%;
-    border: 1px solid var(--light-Blue);
-    width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -175,18 +171,39 @@
 /* Media query for screens up to 991.98px width */
 @media only screen and (max-width: 991.98px) {
 
+
     .teamSlider_wrapper {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+    .teamSlider .swiper_navigation .pagination_wrapper {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        text-align: center;
+        width: 50%;
+    }
 
-    .teamSlider_wrapper .column {
+    .teamSlider .swiper-pagination .swiper-pagination-bullet-active {
+        height: 15px;
+        width: 15px;
+        /* margin-right: 25px !important; */
+        background-color: var(--secondary-color);
+    }
+    .teamSlider .swiper-pagination .swiper-pagination-bullet {
+        height: 10px;
+        width: 10px;
+        margin-right: 25px !important;
+    }
+    .teamSlider_wrapper .left_image {
         width: 90%;
     }
 
-    .teamSlider_wrapper .column {
+    .teamSlider_wrapper .right_text {
         width: 90%;
     }
 
@@ -196,40 +213,55 @@
     }
 
     .teamSlider .swiper-button-next {
-        right: 36%;
+        right: 32%;
     }
 
     .teamSlider .swiper-button-prev {
-        left: 36%;
-    }
-    .teamSlider .bottomBorder {
-        top: 77%; 
+        left: 30%;
     }
 
 }
 
 
 @media (max-width: 767.98px) {
-    .teamSlider .teamContent {
-        padding-top: 80px;
-    }
-    .teamContent h4 {
-        padding-top: 20px;
-        padding-bottom: 30px;
+
+    .teamSlider .swiper_navigation .pagination_wrapper {
+        position: absolute;
+        top: 96px;
+        left: 51%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        text-align: center;
+        width: 176px;
     }
     .teamSlider .swiper-button-next {
-        right: 38%;
+        right: 20%;
+        padding-left: 10px;
     }
 
     .teamSlider .swiper-button-prev {
-        left: 38%;
+        left: 20%;
+        padding-right: 10px;
     }
-    
 
-    .teamSlider .column {
+    /* .teamSlider .column {
         width: 73.48% !important;
         margin-left: 13.23% !important;
         margin-right: 13.23% !important;
+    } */
+    .teamSlider .swiper-pagination .swiper-pagination-bullet {
+        height: 8px;
+        width: 8px;
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+
+    .teamSlider .swiper-pagination .swiper-pagination-bullet-active {
+        height: 12px;
+        width: 12px;
+         margin-left: 10px !important; 
+        margin-right: 10px !important;
+        background-color: var(--secondary-color);
     }
 
     .teamSlider .column img{
@@ -240,23 +272,9 @@
         padding-bottom: 100px;
         padding-left: 0% !important;
     }
-
-    .teamSlider .swiper-pagination span {
-        background-color: var(--secondary-color);
-        height: 8px;
-        width: 8px;
-    }
-    swiper-button-next:after, .swiper-button-prev:after {
-        font-family: swiper-icons;
-        font-size: var(--swiper-navigation-size-14) !important;
-        text-transform: none!important;
-        letter-spacing: 0;
-        font-variant: initial;
-        line-height: 1;
-    }
 }
 
-@media (max-width: 577px) {
+/* @media (max-width: 577px) {
     .teamSlider .swiper-button-next {
         right: 30%;
     }
@@ -264,7 +282,4 @@
     .teamSlider .swiper-button-prev {
         left: 30%;
     }
-    .teamSlider .bottomBorder {
-        top: 78%;
-    }
-}
+} */

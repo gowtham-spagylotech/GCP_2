@@ -40,7 +40,7 @@
 
 .imageAndTextSideBorder {
     border-left: 1px solid var(--light-Blue);
-    border-right: 1px solid var(--light-Blue);
+    border-right: 1px solid var(--dark-Grey);
 }
 
 .imageAndText .rightText .title {

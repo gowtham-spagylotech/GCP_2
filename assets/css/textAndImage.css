@@ -5,7 +5,7 @@
 /* Styling for the container within textAndImageSection */
 .textAndImageSection .container {
     border-left: 1px solid var(--light-Blue);
-    border-right: 1px solid var(--primary-color);
+    border-right: 1px solid var(--dark-Grey);
 }
 
 /* Styling for the left text within textAndImageSection */

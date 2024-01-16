@@ -1,11 +1,18 @@
 /* image and text with bg */
 .imageAndTextBg .row {
-    justify-content: space-between;
-    padding-top: 150px;
-    padding-bottom: 150px;
+   column-gap: 11.16%;
+    padding-top: 12.5%;
+    padding-bottom: 12.5%;
 }
-.imageAndTextBg .leftImage, .rightText {
-    width: 40.1%;
+.imageAndTextBg .leftImage {
+    width: 42.95%;
+}
+.imageAndTextBg .rightText {
+    width: 40%;
+}
+.imageAndTextBg .spacing {
+    padding-top: 6.8%;
+    padding-bottom: 6.8%;
 }
 .imageAndTextBg .image-1 {
     mix-blend-mode: overlay;
@@ -16,18 +23,18 @@
     background-size: cover;
     margin-bottom: -1px;
 }
- .imageAndTextBg img.leftImgOverlay {
+ .imageAndTextBg .leftImgOverlay {
     position: absolute;
     top: 25%;
     right: 0;
 }
 .imageAndTextBg .shapeCenter {
-    left:188px;
+    left:13.1%;
 }
 .imageAndTextBg .rightText{
     color: #fff;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 3.8%;
+    padding-bottom: 3.8%;
 }
 .imageAndTextBg .title {
     color: #fff;
@@ -55,12 +62,12 @@
     }
     .imageAndTextBg img.leftImgOverlay {
         position: absolute;
-        top: 20%;
+        top: 18%;
         right: 0;
     }
     .imageAndTextBg .shapeCenter {
-        left: 83px;
-        width: 200px;
+        left: 11%;
+        width: 26%;
     }
 }
 
@@ -117,7 +124,7 @@
         padding: 0;
     }
 
-    .imageAndTextBg .leftImage {
+    .imageAndTextBg .leftImage .imageWrapper {
         width: 100%;
         order: 1;
         position: relative;
@@ -135,9 +142,9 @@
         position: absolute;
         top: 11%;
         right: 0;
-        width: 240px;
+        width: 74%;
     }
     .imageAndTextBg .shapeCenter {
-        left: 42px;
+        left: 13%;
     }
 }

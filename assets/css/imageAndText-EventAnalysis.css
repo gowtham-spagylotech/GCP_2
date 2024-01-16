@@ -104,4 +104,10 @@
         order: 2;
         position: relative;
     }
+    .imageAndText-EventAnalysis .space {
+        row-gap: 40px;
+        padding-left: 0px; 
+         padding-right: 0px;
+        padding-bottom: 8.3%;
+    }
 }
