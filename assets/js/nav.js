@@ -72,19 +72,22 @@ $(document).ready(function () {
 
 //onClick dropdown icon display dropdown navigation
 $(document).ready(function () {
-    var dropdownMenu = $('#mobDataResults .dropdown-arrow');
+    var dropdownMenu = $('#mobDataResults');
+    var dropdownMenuArrow = $('#mobDataResults .dropdown-arrow');
     var dropdownContent = $('.mobDropdownmenu');
 
     dropdownMenu.click(function (event) {
         event.stopPropagation();
-        dropdownMenu.toggleClass('upArrow');
+        dropdownMenu.toggleClass('active');
+        dropdownMenuArrow.toggleClass('upArrow');
         dropdownContent.slideToggle(600);
     });
 
     // Close the dropdown when clicking anywhere on the document
     $(document).on('click', function (event) {
         if (!dropdownMenu.is(event.target) && dropdownMenu.has(event.target).length === 0) {
-            dropdownMenu.removeClass('upArrow');
+            dropdownMenu.removeClass('active');
+            dropdownMenuArrow.removeClass('upArrow');
             dropdownContent.slideUp(600);
         }
     });
