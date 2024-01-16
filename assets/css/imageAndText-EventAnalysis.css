@@ -5,6 +5,9 @@
 .imageAndText-EventAnalysis .leftImage, .rightText {
     width: 47.15%;
 }
+.imageAndText-EventAnalysis .column {
+    
+}
 .imageAndText-EventAnalysis .space {
     column-gap: 5%;
     padding-bottom: 8.3%;
