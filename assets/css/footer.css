@@ -54,8 +54,11 @@ footer .footerNavItem{
 }
 #signupForm {
     padding: 60px 0;
-    width: 67.86%;
+    width: 66.73%;
     margin: auto;
+}
+.footerSecondRow{
+    justify-content: space-between;
 }
 .formRow{
     display: flex;
@@ -102,6 +105,7 @@ footer input[type="submit"]{
     outline: none;
     padding-bottom: 5px;
     cursor: pointer;
+    margin-left: auto;
 }
 footer input {
     -webkit-border-radius: 0;
@@ -141,6 +145,14 @@ footer .captchaRow{
  #footerCaptcha {
     width: 100%;
 }
+.footerSecondRow .column{
+    width: 22.2% !important;
+    border-left: 1px solid var(--tertiary-color);
+}
+footer .socialMedia{
+    display: flex;
+    column-gap: 20%;
+}
 .footerLastRow{
     padding: 18px 0;
     align-items: center;
@@ -163,10 +175,19 @@ footer .copyright{
 }
 @media (max-width: 991.98px){
     #signupForm {
-        width: 95%;
+        margin: unset;
+    }
+    #footerSubscribeWrapper {
+        width: 100%;
+    }
+    footer .lastRow {
+        margin-bottom: 30px;
     }
 }
 @media (max-width: 767.98px){
+    footer .row{
+        padding: 0;
+    }
     footer .column, footer .column:first-child, footer .column:last-child {
         width: 100%;
         padding: 20px 0;
@@ -175,13 +196,13 @@ footer .copyright{
         border: 0;
     }
     footer .column:first-child {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     footer .column:last-child {
-        padding-bottom: 60px;
+        padding-bottom: 40px;
     }
     footer .footerNavList li {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     #signupForm ,#footerSubscribeWrapper {
         width: 100%;
@@ -194,10 +215,45 @@ footer .copyright{
         margin-bottom: 30px;
     }
     footer .lastRow{
-        margin-top: 0;
+        margin: 0;
+    }
+    .footerSecondRow .column {
+        width: 100% !important;
+    }
+    #signupForm {
+        padding-bottom: 0;
     }
     footer .copyright {
-        order: 2;
-        margin-top: 15px;
+        margin: 20px 0;
+    }
+    footer .termsCondition {
+        margin-top: 20px;
+    }
+    .footerAccordionContent {
+        display: none;
+    }
+    .footerAccordionTitle{
+        position: relative;
+    }
+    footer .column.footerBottomBorder {
+        border-bottom: 1px solid var(--tertiary-color);
+    }
+    .footerAccordionTitle::before {
+        font-family: "Inter Tight", sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        color: var(--tertiary-color);
+        position: absolute;
+        bottom: -50%;
+        right: 0;
+        padding: 15px 0;
+        transition: all .8s;
+        content: '\002B';
+        transform: rotate(90deg);
+    }
+    .footerAccordionTitle.active::before {
+        transform: none;
+        content: "\2212";
     }
 }

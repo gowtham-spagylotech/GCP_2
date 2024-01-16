@@ -1,122 +1,93 @@
-//Desktop dropdown navigation
-document.addEventListener('DOMContentLoaded', function () {
-    var dataResultsItem = document.getElementById('dataResults');
-
-    if (dataResultsItem) {
-        var dropdownMenu = dataResultsItem.querySelector('.dropdownmenu');
-
-        dataResultsItem.addEventListener('mouseover', function () {
-            if (dropdownMenu) {
-                dropdownMenu.classList.add('show');
-            }
-        });
-
-        dataResultsItem.addEventListener('mouseout', function () {
-            if (dropdownMenu) {
-                dropdownMenu.classList.remove('show');
-            }
-        });
+window.addEventListener('scroll', function () {
+    const header = document.querySelector('header');
+    if (window.scrollY > 0) {
+      header.classList.add('sticky');
+    } else {
+      header.classList.remove('sticky');
     }
 });
 
-
-//mobile dropdown navigation
-document.addEventListener('DOMContentLoaded', function () {
-    var mobDataResultsItem = document.getElementById('mobDataResults');
-
-
-    var dropdownMenu = mobDataResultsItem.querySelector('.mobDropdownmenu');
-    var bannerDownArrow = mobDataResultsItem.querySelector('.bannerDownArrow');
-    var bannerUpArrow = mobDataResultsItem.querySelector('.bannerUpArrow');
-
-    bannerDownArrow.addEventListener('click', function () {
-        if (bannerDownArrow) {
-            dropdownMenu.classList.remove('hideData');
-            dropdownMenu.classList.add('showData');
-            bannerDownArrow.classList.remove('showData');
-            bannerDownArrow.classList.add('hideData');
-            bannerUpArrow.classList.remove('hideData');
-            bannerUpArrow.classList.add('showData');
-        }
-    });
-
-    bannerUpArrow.addEventListener('click', function () {
-        if (bannerUpArrow) {
-            dropdownMenu.classList.remove('showData');
-            dropdownMenu.classList.add('hideData');
-            bannerUpArrow.classList.add('hideData');
-            bannerUpArrow.classList.remove('showData');
-            bannerDownArrow.classList.add('showData');
-            bannerDownArrow.classList.remove('hideData');
-        }
-    });
-
-
+// Hide nav on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('.navigation').outerHeight();
+console.log("navbarHeight - ", navbarHeight)
+$(window).scroll(function (event) {
+  didScroll = true;
 });
+
+setInterval(function () {
+  if (didScroll) {
+    hasScrolled();
+    didScroll = false;
+  }
+}, 250);
+
+function hasScrolled() {
+  var st = $(this).scrollTop();
+
+  // Make scroll more than delta
+  if (Math.abs(lastScrollTop - st) <= delta)
+    return;
+
+  // If scrolled down and past the navbar, add class .nav-up.
+  if (st > lastScrollTop && st > navbarHeight) {
+    // Scroll Down
+    $('.navigation').removeClass('nav-up').addClass('nav-down');
+  } else {
+    // Scroll Up
+    if (st + $(window).height() < $(document).height()) {
+      $('.navigation').removeClass('nav-down').addClass('nav-up');
+    }
+  }
+
+  lastScrollTop = st;
+}
+
 
 //onClick hamburger dispaly navigation
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const heroBanner = document.getElementById('heroBanner');
-    const herotwoBanner = document.getElementById('herotwoBanner');
-    const navbar = document.getElementById('navbar');
+$(document).ready(function () {
+    const hamburger = $('#hamburger');
+    const header = $('header');
+    const navbar = $('#navbar');
+    const navigation = $('.navigation');
 
-    hamburger.addEventListener('click', function () {
-
-
-        // Toggle the crossed class on click
-        hamburger.classList.toggle('crossed');
-        // Toggle the display of the navbar
-        navbar.classList.toggle('showNav');
-        heroBanner.classList.remove('showData');
-        heroBanner.classList.add('hideData');
-        herotwoBanner.classList.remove('hideData');
-        herotwoBanner.classList.add('showData');
+    hamburger.click(function () {
+        header.addClass('hamburgerOpened');
+        navigation.toggleClass('navigationOpened');
+        hamburger.toggleClass('crossed');
+        $('#navbar').slideToggle(600, function () {
+            if (header.hasClass('hamburgerOpened')) {
+                setTimeout(function () {
+                    header.removeClass('hamburgerOpened');
+                }, 1);
+            }
+        });;
     });
-
-
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const hamburger = document.getElementById('hamburger');
-    const heroBanner = document.getElementById('heroBanner');
-    const herotwoBanner = document.getElementById('herotwoBanner');
-
-    // Initially check if the 'crossed' class is present
-    var crossed = hamburger.classList.contains('crossed');
-
-    // Function to toggle banners based on the 'crossed' class
-    function toggleBanners() {
-        if (crossed) {
-            heroBanner.classList.remove('showData');
-            heroBanner.classList.add('hideData');
-            herotwoBanner.classList.remove('hideData');
-            herotwoBanner.classList.add('showData');
-        } else {
-            heroBanner.classList.remove('hideData');
-            heroBanner.classList.add('showData');
-            herotwoBanner.classList.remove('showData');
-            herotwoBanner.classList.add('hideData');
-        }
-    }
-
-    // Add click event listener to the hamburger element
-    hamburger.addEventListener('click', function () {
-        // Toggle the 'crossed' class on click
-        crossed = !crossed;
-
-        // Toggle the banners based on the updated 'crossed' value
-        toggleBanners();
-    });
-
-    // Initially toggle banners based on the 'crossed' class
-    toggleBanners();
-});
 
 
 
 //onClick dropdown icon display dropdown navigation
-function toggleDropdown() {
-    var dropdownMenu = document.querySelector('#mobDataResults .mobDropdownmenu');
-    dropdownMenu.classList.toggle('show');
-}
+$(document).ready(function () {
+    var dropdownMenu = $('#mobDataResults .dropdown-arrow');
+    var dropdownContent = $('.mobDropdownmenu');
+
+    dropdownMenu.click(function (event) {
+        event.stopPropagation();
+        dropdownMenu.toggleClass('upArrow');
+        dropdownContent.slideToggle(600);
+    });
+
+    // Close the dropdown when clicking anywhere on the document
+    $(document).on('click', function (event) {
+        if (!dropdownMenu.is(event.target) && dropdownMenu.has(event.target).length === 0) {
+            dropdownMenu.removeClass('upArrow');
+            dropdownContent.slideUp(600);
+        }
+    });
+});
+
+

@@ -4,9 +4,30 @@ header {
 
 .navigation {
     position: fixed;
-    top: 50px;
+    top: 0px;
     width: 100%;
     z-index: 1;
+    padding: 30px 0;
+    transition: transform .8s ease-in-out;
+}
+
+header.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+header .navigation.nav-down {
+    transform: translateY(-100%);
+}
+
+header .navigation.nav-up {
+    transform: none;
+}
+
+header.sticky .navigation {
+    background: url(../img/stickyBg.jpg) no-repeat;
+    background-size: cover;
 }
 
 .logo {
@@ -86,7 +107,7 @@ header {
     -webkit-transition: all 0.8s ease-in-out;
 }
 
-.show {
+.nav-item:hover .dropdownmenu  {
     opacity: 1;
     visibility: visible;
 }
@@ -151,13 +172,13 @@ header {
 }
 
 @media (max-width: 991.98px) {
-    .hamburger {
-        margin-right: 5.83%;
+    .navigation .row{
+        align-items: center;
     }
 
     .hamburger .line {
-        width: 35px;
-        height: 3px;
+        width: 30px;
+        height: 2px;
         background: var(--tertiary-color);
         margin: 5px auto;
         transition: all 0.8s ease-in-out;
@@ -165,15 +186,10 @@ header {
     }
 
     #navbar {
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.8s ease-in-out;
-        display: inline;
-    }
-
-    .showNav {
-        opacity: 1 !important;
-        visibility: visible !important;
+        display: none;
+        width: 100%;
+        margin-right: 0;
+        padding-top: 100px;
     }
 
     #hamburger.crossed .line:nth-child(1) {
@@ -181,11 +197,7 @@ header {
     }
 
     #hamburger.crossed .line:nth-child(2) {
-        opacity: 0;
-    }
-
-    #hamburger.crossed .line:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(1px, 0px);
     }
 
     .navbar nav {
@@ -198,13 +210,29 @@ header {
         padding-right: 0;
         text-align: center;
         width: 100%;
-        margin-bottom: 17px;
+        margin-bottom: 46px;
     }
 
     .searchbox {
-        width: 50%;
+        width: 34.5%;
         margin: auto;
-        margin-top: 20px;
+        margin-top: 118px;
+        margin-bottom: 10px;
+    }
+    
+     header.sticky .navigation, header.hamburgerOpened .navigation{   
+        background: url(../img/StickyBgMob.jpg) no-repeat;
+    }
+
+    header .navigation.navigationOpened .overlay {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        padding: 30px 0;
+        overflow: scroll;
+        background: url(../img/StickyBgMob.jpg) no-repeat;
+        background-size: cover;
     }
 
     #mobDataResults .dropdown-arrow {
@@ -214,29 +242,27 @@ header {
     }
 
     #mobDataResults .dropdown-arrow::before {
-        font-family: 'Inter Tight';
-        font-size: 20px;
+        font-size: 36px;
         line-height: normal;
         color: var(--tertiary-color);
         position: absolute;
-        top: -2px;
-        right: 0;
-        padding: 0 10px;
+        top: 0px;
+        right: 0;        
         transition: all .8s;
-        content: '\002B';
+        content: '↓';
+    }
+    #mobDataResults .dropdown-arrow.upArrow::before {
+        content: '↑';
+        font-weight: 800;
     }
 
     .mobDropdownmenu {
-        max-height: 0;
-        overflow: hidden;
+        display: none;
         list-style: none;
-        transition: max-height 0.8s ease-in-out;
-        -webkit-transition: max-height 0.8s ease-in-out;
+        border-bottom: 1px solid rgb(255, 255, 255, .5);
     }
-
-    .mobDropdownmenu.show {
-        max-height: 100%;
-        margin-top: 8px;
+    .dropdown-item {
+        padding: 16px 0px;
     }
 }
 
@@ -254,7 +280,6 @@ header {
     } */
 
     .nav-item .nav-link {
-        font-family: 'Inter Tight', sans-serif;;
         font-size: var( --line-height-36);
         font-weight: 200;
         line-height: var(--line-height-normal);

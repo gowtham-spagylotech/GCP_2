@@ -387,6 +387,10 @@ h6 b {
         display: block !important;
     }
 
+    .hideMobile {
+        display: none !important;
+    }
+
     .sectionSpace {
         margin-bottom: 80px;
     }
