@@ -221,7 +221,7 @@ header.sticky .navigation {
     }
     
      header.sticky .navigation, header.hamburgerOpened .navigation{   
-        background: url(../img/StickyBgMob.jpg) no-repeat;
+        background: url(../img/stickyBgMob.jpg) no-repeat;
     }
 
     header .navigation.navigationOpened .overlay {
@@ -231,7 +231,7 @@ header.sticky .navigation {
         height: 100vh;
         padding: 30px 0;
         overflow: scroll;
-        background: url(../img/StickyBgMob.jpg) no-repeat;
+        background: url(../img/stickyBgMob.jpg) no-repeat;
         background-size: cover;
     }
 
