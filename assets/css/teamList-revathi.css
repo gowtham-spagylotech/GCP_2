@@ -1,6 +1,7 @@
 /* Team List Block */
 .teamListBlock .column{
     width: 21.43%;
+    position: relative;
 }
 .teamListBlock .column img {
     width: 100%;
