@@ -47,8 +47,8 @@
                         <p class="title bottomSpace">WHY DO WE NEED GCP 2.0?</p>
                         <!-- Main Heading with Emphasized Text -->
                         <h2 class="bottomSpace">When people understand the power of what we can't see, humanity can
-                            <span class="italicFont"> heal </span> and
-                            <span class="italicFont">thrive.</span>
+                            <i class="fontWeight300"> heal </i> and
+                            <i class="fontWeight300">thrive.</i>
                         </h2>
                         <!-- mainTitle Paragraph -->
                         <p class="mainTitle bottomSpace">
@@ -69,6 +69,9 @@
         </div>
         <!-- Video Section with Main Content -->
         <div class="videoSection">
+            <video autoplay muted loop id="myVideo">
+                <source src="./assets/img/videoSection.mp4" type="video/mp4">
+              </video>
             <div class="container">
                 <div class="mainContent">
                     <!-- Subheading -->
@@ -370,7 +373,7 @@
                     <div class="rightGraphicImage">
                         <img src="./assets/img/impactBlockGraphic.png" alt="graphicImage" />
                     </div>
-                    </div?>
+                    </div>
                 </div>
             </div>
         </div>
@@ -512,6 +515,7 @@
             },
             pagination: {
                 el: ".swiper-pagination",
+                clickable: true,
             },
             mousewheel: true,
             keyboard: true,
