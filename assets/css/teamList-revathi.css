@@ -6,34 +6,6 @@
 .teamListBlock .column img {
     width: 100%;
 }
-.teamListBlock .image-container .name {
-    visibility: hidden;
-    width: 100%;
-    text-align: left;
-    position: absolute;
-    bottom: -11px;
-    left: 0;
-    background-color: var(--secondary-color);
-    color: #fff;
-    padding-top: 12px;
-    padding-bottom: 2px;
-    padding-left: 18px;
-    border-radius: 2px;
-}
-
-.teamListBlock .image-container .name.title {
-    padding-top: 5px;
-    padding-bottom: 12px;
-    bottom: -51px;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.teamListBlock .image-container:hover .name {
-    visibility: visible;
-}
 
 .teamListBlock {
     padding-top: 10.43%;
@@ -77,25 +49,48 @@
     margin-top: 125px;
     /* margin-bottom: 125px; */
 }
-
 .teamListBlock img.teamList-image {
     display: block;
 }
-
 .teamListBlock .overlay-color {
-    visibility: visible;
-    /* padding: 0.869% 8.334%; */
-    padding: 0.84% 8.39%;
+    padding: 12px 8.39%;
     position: absolute;
     background: var(--secondary-color);
     width: 100%;
-    height: 24.9px;
-    transition: 5s ease;
+    transition: 0.8s ease;
+    bottom: 5px;
+    z-index: -1;
 }
 
-.teamListBlock .image-container:hover .overlay-color {
-    visibility: hidden;
+.teamList .image-container {
+    position: relative;
+    display: inline-block;
 }
+
+.teamList .image-container .name {
+    /* visibility: hidden; */
+    width: 100%;
+    text-align: left;
+    left: 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+    border-radius: 2px;
+    
+}
+
+.teamList .image-container .name.title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+.image-container:hover .overlay-color {
+    transform: translateY(100%);
+}
+
+
+
+
 
 
 
@@ -107,10 +102,9 @@
     width: 100%;
 }
 .researchTeamBlock .image-container .name {
-    visibility: hidden;
+    /* visibility: hidden; */
     width: 100%;
     text-align: left;
-    position: absolute;
     bottom: -12px;
     left: 0;
     background-color: var(--secondary-color);
@@ -132,7 +126,8 @@
 }
 
 .researchTeamBlock .image-container:hover .name {
-    visibility: visible;
+    /* visibility: visible; */
+    transform: translateY(100%);
 }
 
 .researchTeamBlock {
@@ -183,15 +178,15 @@ img.teamList-image {
 }
 
 .researchTeamBlock .overlay-color {
-    visibility: visible;
+    /* visibility: visible; */
     /* padding: 0.869% 8.334%; */
-    padding: 0.84% 8.39%;
+    padding: 12px 8.39%;
     position: absolute;
     background: var(--secondary-color);
 }
 
 .image-container:hover .overlay-color {
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 
 
@@ -257,7 +252,7 @@ img.teamList-image {
     }
     
     .teamListBlock .image-container .name {
-        visibility: visible;
+        /* visibility: visible; */
     }
     .teamListBlock h4 {
         padding-top: 4.66%;
@@ -302,7 +297,7 @@ img.teamList-image {
     }
     
     .researchTeamBlock .image-container .name {
-        visibility: visible;
+        /* visibility: visible; */
     }
     .researchTeamBlock h4 {
         padding-top: 4.66%;
